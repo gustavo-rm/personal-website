@@ -13,6 +13,7 @@
     <!-- CSS -->
     <link type="text/css" href="css/bootstrap/bootstrap.css" rel="stylesheet">
     <link type="text/css" href="css/style.css" rel="stylesheet">
+    <link type="text/css" href="css/owl-carousel.css" rel="stylesheet">
 
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/83102ea232.js" crossorigin="anonymous"></script>
@@ -24,35 +25,49 @@
             <a class="navbar-brand" href="index.html">
                 <span class="fa fa-laptop"></span> Alexander
             </a>
-            <!-- if logo is image enable this
-        <a class="navbar-brand" href="#index.html">
-            <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-        </a> -->
-            <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
-                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+
+            <button class="navbar-toggler collapsed bg-gradient" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
                 <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-                </span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item @@about__active">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item @@contact__active">
-                        <a class="nav-link" href="contact.html">Contact</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Language switcher -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="dropdown-item" onclick="changeLanguage('pt')"
+                                   aria-label="Portuguese (Brazil)">
+                                    <img src="path-to-brazil-flag.png" alt="Portuguese (Brazil)"
+                                         title="Portuguese (Brazil)" width="24">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item" onclick="changeLanguage('es')" aria-label="Spanish">
+                                    <img src="path-to-spain-flag.png" alt="Spanish" title="Spanish" width="24">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item" onclick="changeLanguage('en')" aria-label="English">
+                                    <img src="path-to-usa-flag.png" alt="English" title="English" width="24">
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
+                <!-- //Language switcher -->
             </div>
-            <!-- toggle switch for light and dark theme -->
+
             <div class="mobile-position">
-                <nav class="navigation">
-                    <div class="theme-switch-wrapper">
+                <nav class="navigation d-flex align-items-center">
+                    <div class="theme-switch-wrapper me-3">
                         <label class="theme-switch" for="checkbox">
                             <input type="checkbox" id="checkbox">
                             <div class="mode-container">
@@ -63,19 +78,18 @@
                     </div>
                 </nav>
             </div>
-            <!-- //toggle switch for light and dark theme -->
         </nav>
     </div>
 </header>
 <!-- //header -->
 
 <!-- banner section -->
-<section id="home" class="w3l-banner py-5">
+<section id="home" class="banner py-5">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-sm-12 mt-lg-0 mt-4">
                 <span class="title-small">Hello</span>
-                <h1 class="mb-2 title"> <span>I'm</span> Alexander </h1>
+                <h1 class="mb-2 title"><span>I'm</span> Alexander </h1>
                 <h1 class="mb-4 title"> a <span class="typed-text"></span><span class="cursor">&nbsp</span></h1>
             </div>
         </div>
@@ -84,8 +98,8 @@
 <!-- //banner section -->
 
 <!-- home page about section -->
-<section class="w3l-index3" id="about">
-    <div class="midd-w3 py-5">
+<section class="index3" id="about">
+    <div class="midd py-5">
         <div class="container py-lg-5 py-md-3">
             <div class="row">
                 <div class="col-lg-4">
@@ -110,7 +124,7 @@
 <!-- //home page about section -->
 
 <!-- home page second section -->
-<div class="py-5 w3l-resume">
+<section class="py-5 resume">
     <div class="container py-lg-5 py-3">
         <h5 class="title-small mb-2"> Education</h5>
         <h3 class="title-big mb-4">I Would Love to make your Ideas real </h3>
@@ -118,11 +132,11 @@
             resume in order to learn the details of my professional life as a designer and photographer. Contact me and
             we will discuss your projects!</p>
     </div>
-</div>
+</section>
 <!-- //home page second section -->
 
 <!-- home page services section -->
-<section class="w3l-services">
+<section class="services">
     <div class="blog py-5" id="services">
         <div class="container py-lg-5">
             <h5 class="title-small text-center">Services</h5>
@@ -228,7 +242,7 @@
 <!-- //home page services section -->
 
 <!-- home page video popup section -->
-<section class="w3l-index5" id="about">
+<section class="index5">
     <div class="new-block py-5">
         <div class="container py-lg-5">
             <div class="middle-section text-center">
@@ -248,7 +262,7 @@
 <!-- //home page video popup section -->
 
 <!-- freelance hire me -->
-<section class="w3l-grid-quote text-center py-5">
+<section class="grid-quote text-center py-5">
     <div class="container py-3">
         <h6 class="title-small">Get in touch</h6>
         <h3 class="title-big mb-md-5 mb-4">Let's start a Project! Hire Me.</h3>
@@ -259,7 +273,7 @@
 <!-- //freelance hire me -->
 
 <!-- Footer -->
-<section class="w3l-footer py-sm-5 py-4">
+<section class="footer py-sm-5 py-4">
     <div class="container">
         <div class="footer-content">
             <div class="row">
@@ -286,10 +300,10 @@
 <!-- //Footer -->
 
 <!-- all js scripts and files here -->
-
-<script src="js/theme-change.js"></script><!-- theme switch js (light and dark)-->
 <script src="js/jquery-3.3.1.min.js"></script><!-- default jQuery -->
-<!-- services owlcarousel -->
+<script src="js/bootstrap/bootstrap.js"></script>
+<script src="js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+<!-- owlcarousel -->
 <script src="js/owl.carousel.js"></script>
 <script src="js/script.js"></script>
 
