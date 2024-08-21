@@ -17,13 +17,15 @@
 
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/83102ea232.js" crossorigin="anonymous"></script>
+    <!-- Popper Development version -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
 </head>
 <body>
 <header id="site-header" class="fixed-top">
     <div class="container">
         <nav class="navbar navbar-expand-lg stroke">
             <a class="navbar-brand" href="index.html">
-                <span class="fa fa-laptop"></span> Alexander
+                <span class="fa-solid fa-laptop-code"></span> Gustavo
             </a>
 
             <button class="navbar-toggler collapsed bg-gradient" type="button" data-bs-toggle="collapse"
@@ -35,7 +37,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Language switcher -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                            aria-expanded="false">
@@ -64,20 +66,6 @@
                 </ul>
                 <!-- //Language switcher -->
             </div>
-
-            <div class="mobile-position">
-                <nav class="navigation d-flex align-items-center">
-                    <div class="theme-switch-wrapper me-3">
-                        <label class="theme-switch" for="checkbox">
-                            <input type="checkbox" id="checkbox">
-                            <div class="mode-container">
-                                <i class="gg-sun"></i>
-                                <i class="gg-moon"></i>
-                            </div>
-                        </label>
-                    </div>
-                </nav>
-            </div>
         </nav>
     </div>
 </header>
@@ -87,9 +75,9 @@
 <section id="home" class="banner py-5">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6 col-sm-12 mt-lg-0 mt-4">
+            <div class="col-lg-8 col-sm-12 mt-lg-0 mt-4">
                 <span class="title-small">Hello</span>
-                <h1 class="mb-2 title"><span>I'm</span> Alexander </h1>
+                <h1 class="mb-2 title"><span>I'm</span> Gustavo </h1>
                 <h1 class="mb-4 title"> a <span class="typed-text"></span><span class="cursor">&nbsp</span></h1>
             </div>
         </div>
@@ -97,50 +85,67 @@
 </section>
 <!-- //banner section -->
 
-<!-- home page about section -->
+<!-- About -->
 <section class="index3" id="about">
     <div class="midd py-5">
         <div class="container py-lg-5 py-md-3">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 d-flex align-center justify-content-center">
                     <div class="position-relative">
-                        <img src="images/myphoto.jpg" alt="" class="radius-image img-fluid">
+                        <img src="images/me.jpeg" alt="" class="radius-image img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-8 mt-lg-0 mt-5">
                     <h5 class="title-small mb-2">Who am i?</h5>
-                    <h3 class="title-big">I'm Alexander Smith, a visual UI/UX Designer and Web Developer</h3>
-                    <p class="mt-4">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-                        ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Non quae, fugiat consequatur voluptatem nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum
-                        dolor sit, amet consectetur adipisicing elit. Dolor ipsum non velit reprehenderit, molestias
-                        culpa!</p>
+                    <p class="mt-lg-3 mt-2">
+                        Possuo graduação em Tecnologia em Sistemas para Internet, onde me aprofundei em Desenvolvimento Web, aprendendo tecnologias como HTML, CSS e Javascript para o Frontend e Node JS, Ruby on Rails e PHP Laravel para o Backend. Na parte de Segurança Web, obtive experiências com Defesa Cibernética, sendo este meu projeto de pesquisa de conclusão de curso.
+                    </p>
+                    <p class="mt-lg-3 mt-2">
+                        Com mais de cinco anos de experiência como Professor de Programação, evoluí minhas estratégias de ensino para transmitir conhecimento em Desenvolvimento Web e diversos Frameworks para uma base de alunos diversificada. Minha expertise também se estende à mentorias em Desenvolvimento de Jogos Digitais, Robótica e IoT.
+                    </p>
+                    <p class="mt-lg-3 mt-2">
+                        Recentemente desenvolvi um Sistema de Recomendação utilizando Java Spring Boot para uma empresa de educação a distância. Adquiri habilidades analíticas que envolvem processos estatísticos através da aplicação de Métodos Matemáticos na Computação. Além disso, também trabalhei com performance de software e linguagem R.
+                    </p>
                     <a href="#download" class="btn btn-style btn-primary mt-lg-5 mt-4">Download CV</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- //home page about section -->
+<!-- //About -->
 
-<!-- home page second section -->
-<section class="py-5 resume">
+<!-- Education -->
+<section class="py-5 education">
     <div class="container py-lg-5 py-3">
         <h5 class="title-small mb-2"> Education</h5>
-        <h3 class="title-big mb-4">I Would Love to make your Ideas real </h3>
-        <p>I love graphic design and photography and have been working on my portfolio since 2016. You can download my
-            resume in order to learn the details of my professional life as a designer and photographer. Contact me and
-            we will discuss your projects!</p>
+        <h3 class="mb-2">Universidade Tecnológica Federal do Paraná</h3>
+        <h4>Pós-graduação Lato Sensu - Especialização, Programação para Dispositivos Móveis</h4>
+        <span class="title-small">Maio de 2024 - Maio de 2026</span>
+        <p>
+            Especialização focada em desenvolvimento de aplicações para dispositivos móveis, abrangendo desde conceitos fundamentais até técnicas avançadas. O programa inclui disciplinas como desenvolvimento Android, design de interfaces, gestão de projetos móveis, integração com serviços web, DevOps, monetização e programação em plataformas como Flutter, React Native e iOS.
+        </p>
+        <h3 class="mt-4 mb-2">Universidade Estadual do Oeste do Paraná</h3>
+        <h4>Mestrado, Métodos de Computação Aplicada</h4>
+        <span class="title-small">Julho de 2021 - Fevereiro de 2024</span>
+        <p>
+            Projeto de um sistema para recomendação de conteúdo em plataformas adaptativas de ensino a distância.Projeto de um sistema para recomendação de conteúdo em plataformas adaptativas de ensino a distância.
+        </p>
+        <h3 class="mt-4 mb-2">Universidade Tecnológica Federal do Paraná</h3>
+        <h4>Graduação em Tecnologia da Informação - Sistemas para Internet</h4>
+        <span class="title-small">Março 2017 - 2020</span>
+        <p>
+            Lorem Ipsum
+        </p>
     </div>
 </section>
-<!-- //home page second section -->
+<!-- //Education -->
 
-<!-- home page services section -->
+<!-- Portfolio -->
 <section class="services">
     <div class="blog py-5" id="services">
         <div class="container py-lg-5">
-            <h5 class="title-small text-center">Services</h5>
-            <h3 class="title-big text-center mb-sm-5 mb-4">What I do for you</h3>
+            <h5 class="title-small text-center">Portfolio</h5>
+            <h3 class="title-big text-center mb-sm-5 mb-4">O que eu já fiz</h3>
             <div class="row">
                 <div class="col-md-12 mx-auto pr-2">
                     <div class="owl-two owl-carousel owl-theme">
@@ -239,9 +244,9 @@
         </div>
     </div>
 </section>
-<!-- //home page services section -->
+<!-- //Portfolio -->
 
-<!-- home page video popup section -->
+<!-- Programming languages -->
 <section class="index5">
     <div class="new-block py-5">
         <div class="container py-lg-5">
@@ -259,9 +264,9 @@
         </div>
     </div>
 </section>
-<!-- //home page video popup section -->
+<!-- //Programming languages -->
 
-<!-- freelance hire me -->
+<!-- hire me -->
 <section class="grid-quote text-center py-5">
     <div class="container py-3">
         <h6 class="title-small">Get in touch</h6>
@@ -270,7 +275,7 @@
         <a href="contact.html" class="btn btn-style btn-outline-primary">Get in touch</a>
     </div>
 </section>
-<!-- //freelance hire me -->
+<!-- //hire me -->
 
 <!-- Footer -->
 <section class="footer py-sm-5 py-4">
@@ -302,7 +307,6 @@
 <!-- all js scripts and files here -->
 <script src="js/jquery-3.3.1.min.js"></script><!-- default jQuery -->
 <script src="js/bootstrap/bootstrap.js"></script>
-<script src="js/theme-change.js"></script><!-- theme switch js (light and dark)-->
 <!-- owlcarousel -->
 <script src="js/owl.carousel.js"></script>
 <script src="js/script.js"></script>
