@@ -1,0 +1,67 @@
+{
+  "banner": {
+    "greeting": "Hello",
+    "introduction": "I'm",
+    "profession": "a"
+  },
+  "about": {
+    "title": "About Me",
+    "text-p1": "I have a Bachelor's degree in Technology in Web Systems, where I specialized in Web Development, learning technologies such as HTML, CSS, and Javascript for the Frontend and Node JS, Ruby on Rails, and PHP Laravel for the Backend. In the area of Web Security, I gained experience in Cyber Defense, which was my research project for the final thesis.",
+    "text-p2": "With over five years of experience as a Programming Professor, I have refined my teaching strategies to convey knowledge in Web Development and various Frameworks to a diverse student base. My expertise also extends to mentoring in Digital Game Development, Robotics, and IoT.",
+    "text-p3": "Recently, I developed a Recommendation System using Java Spring Boot for a distance education company. I acquired analytical skills involving statistical processes through the application of Mathematical Methods in Computing. Additionally, I have also worked on software performance and the R language."
+  },
+  "education": {
+    "postgraduate": {
+      "university": "Federal University of Technology - Paraná",
+      "title": "Postgraduate - Mobile Device Programming",
+      "period": "May 2024 - May 2026",
+      "description": "Specialization focused on the development of applications for mobile devices, covering everything from fundamental concepts to advanced techniques. The program includes courses such as Android development, interface design, mobile project management, integration with web services, DevOps, monetization, and programming on platforms like Flutter, React Native, and iOS."
+    },
+    "master": {
+      "university": "State University of Western Paraná",
+      "title": "Master's Degree - Applied Computing Methods",
+      "period": "July 2021 - February 2024",
+      "description": "Project for a recommendation system in adaptive distance learning platforms."
+    },
+    "bachelor": {
+      "university": "Federal University of Technology - Paraná",
+      "title": "Bachelor's Degree in Information Technology - Web Systems",
+      "period": "March 2017 - May 2021",
+      "description": "Focused on building complete and innovative digital solutions for web and mobile, mastering all stages of the process with high quality, security, and usability. Final Thesis in the Information Security discipline, titled: A Comparative Study Between Secure Software Development Processes."
+    }
+  },
+  "portfolio": {
+    "project-1": {
+      "title": "Project Title",
+      "text": "Project Description",
+      "button": "See more"
+    },
+    "project-2": {
+      "title": "Project Title",
+      "text": "Project Description",
+      "button": "See more"
+    },
+    "project-3": {
+      "title": "Project Title",
+      "text": "Project Description",
+      "button": "See more"
+    },
+    "project-4": {
+      "title": "Project Title",
+      "text": "Project Description",
+      "button": "See more"
+    }
+  },
+  "languages": {
+    "title": "Experience",
+    "subtitle": "Programming Languages and Frameworks"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Want to get in touch with me? Send a message by clicking the button below",
+    "button": "Send Message"
+  },
+  "footer": {
+    "text": "Developed by"
+  }
+}

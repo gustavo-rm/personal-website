@@ -1,0 +1,67 @@
+{
+  "banner": {
+    "greeting": "Hola",
+    "introduction": "Me llamo",
+    "profession": "soy"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "text-p1": "Tengo una licenciatura en Tecnología en Sistemas para Internet, donde me especialicé en Desarrollo Web, aprendiendo tecnologías como HTML, CSS y Javascript para el Frontend y Node JS, Ruby on Rails y PHP Laravel para el Backend. En el área de Seguridad Web, adquirí experiencia en Defensa Cibernética, siendo este mi proyecto de investigación para la tesis final.",
+    "text-p2": "Con más de cinco años de experiencia como Profesor de Programación, he desarrollado mis estrategias de enseñanza para transmitir conocimientos en Desarrollo Web y diversos Frameworks a una base diversa de estudiantes. Mi experiencia también se extiende a la mentoría en Desarrollo de Juegos Digitales, Robótica e IoT.",
+    "text-p3": "Recientemente desarrollé un Sistema de Recomendación utilizando Java Spring Boot para una empresa de educación a distancia. Adquirí habilidades analíticas que involucran procesos estadísticos mediante la aplicación de Métodos Matemáticos en la Computación. Además, también trabajé en la optimización de software y en el lenguaje R."
+  },
+  "education": {
+    "postgraduate": {
+      "university": "Universidad Tecnológica Federal de Paraná",
+      "title": "Especialización - Programación para Dispositivos Móviles",
+      "period": "Mayo de 2024 - Mayo de 2026",
+      "description": "Especialización enfocada en el desarrollo de aplicaciones para dispositivos móviles, abarcando desde conceptos fundamentales hasta técnicas avanzadas. El programa incluye asignaturas como desarrollo Android, diseño de interfaces, gestión de proyectos móviles, integración con servicios web, DevOps, monetización y programación en plataformas como Flutter, React Native y iOS."
+    },
+    "master": {
+      "university": "Universidad Estatal del Oeste de Paraná",
+      "title": "Maestría - Métodos de Computación Aplicada",
+      "period": "Julio de 2021 - Febrero de 2024",
+      "description": "Proyecto de un sistema para la recomendación de contenido en plataformas adaptativas de educación a distancia."
+    },
+    "bachelor": {
+      "university": "Universidad Tecnológica Federal de Paraná",
+      "title": "Licenciatura en Tecnología de la Información - Sistemas para Internet",
+      "period": "Marzo de 2017 - Mayo de 2021",
+      "description": "Enfocado en la construcción de soluciones digitales completas e innovadoras para web y mobile, dominando todas las etapas del proceso con alta calidad, seguridad y usabilidad. Trabajo de Tesis en la asignatura de Seguridad de la Información, con el título: Un estudio comparativo entre procesos de desarrollo de software seguro."
+    }
+  },
+  "portfolio": {
+    "project-1": {
+      "title": "Título del proyecto",
+      "text": "Descripción del proyecto",
+      "button": "Ver más"
+    },
+    "project-2": {
+      "title": "Título del proyecto",
+      "text": "Descripción del proyecto",
+      "button": "Ver más"
+    },
+    "project-3": {
+      "title": "Título del proyecto",
+      "text": "Descripción del proyecto",
+      "button": "Ver más"
+    },
+    "project-4": {
+      "title": "Título del proyecto",
+      "text": "Descripción del proyecto",
+      "button": "Ver más"
+    }
+  },
+  "languages": {
+    "title": "Experiencias",
+    "subtitle": "Lenguajes de programación y Frameworks"
+  },
+  "contact": {
+    "title": "Ponte en contacto",
+    "subtitle": "¿Quieres ponerte en contacto conmigo? Envía un mensaje haciendo clic en el botón de abajo",
+    "button": "Enviar mensaje"
+  },
+  "footer": {
+    "text": "Desarrollado por"
+  }
+}

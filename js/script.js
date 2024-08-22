@@ -102,26 +102,4 @@ jQuery(document).ready(function($) {
 			1090: { items: 3 }
 		}
 	});
-
-	// Navbar scroll and toggle
-	$('.navbar-toggler').click(function() {
-		$('body').toggleClass('noscroll');
-		$("header").toggleClass("active");
-	});
-
-	$(window).on("scroll", function() {
-		$("#site-header").toggleClass("nav-fixed", $(this).scrollTop() >= 80);
-	});
-
-	$(window).on("resize", function() {
-		if ($(this).width() > 991) {
-			$("header").removeClass("active");
-		}
-	});
-
-	$(document).on("ready", function() {
-		if ($(window).width() > 991) {
-			$("header").removeClass("active");
-		}
-	});
 });
