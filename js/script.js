@@ -1,40 +1,5 @@
 jQuery.noConflict();
 jQuery(document).ready(function($) {
-
-	function lightboxPhoto() {
-		$("a[data-gal^='prettyPhoto']").prettyPhoto({
-			animationSpeed: 'fast',
-			slideshow: 5000,
-			theme: 'light_rounded',
-			show_title: false,
-			overlay_gallery: false
-		});
-	}
-
-	if ($.fn.prettyPhoto) {
-		lightboxPhoto();
-	}
-
-	if ($.fn.quicksand) {
-		var $data = $(".portfolio-area").clone();
-
-		$('.portfolio-categ li').click(function(e) {
-			e.preventDefault();
-			$(".filter li").removeClass("active");
-			$(this).addClass("active");
-
-			var filterClass = $(this).attr('class').split(' ').pop();
-			var $filteredData = (filterClass === 'all') ?
-				$data.find('.portfolio-item2') :
-				$data.find('.portfolio-item2[data-type="' + filterClass + '"]');
-
-			$(".portfolio-area").quicksand($filteredData, {
-				duration: 600,
-				adjustHeight: 'auto'
-			}, lightboxPhoto);
-		});
-	}
-
 	// Move top button functionality
 	function toggleMoveTopButton() {
 		const moveTopButton = document.getElementById("movetop");

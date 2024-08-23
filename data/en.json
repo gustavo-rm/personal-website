@@ -1,4 +1,7 @@
 {
+  "navbar": {
+    "language": "Language"
+  },
   "banner": {
     "greeting": "Hello",
     "introduction": "I'm",
@@ -11,6 +14,7 @@
     "text-p3": "Recently, I developed a Recommendation System using Java Spring Boot for a distance education company. I acquired analytical skills involving statistical processes through the application of Mathematical Methods in Computing. Additionally, I have also worked on software performance and the R language."
   },
   "education": {
+    "title": "Education",
     "postgraduate": {
       "university": "Federal University of Technology - Paraná",
       "title": "Postgraduate - Mobile Device Programming",
@@ -21,13 +25,15 @@
       "university": "State University of Western Paraná",
       "title": "Master's Degree - Applied Computing Methods",
       "period": "July 2021 - February 2024",
-      "description": "Project for a recommendation system in adaptive distance learning platforms."
+      "description": "The work titled \"Study Recommendation in the AlfaCon Public Competitions Virtual Learning Environment: studies with a RESTful API\" discusses the creation of an API integrated into the AlfaCon system, focused on recommending personalized study plans for registered students. This API, based on the Theory of Meaningful Learning, utilizes assessment models from Classical Test Theory (CTT) and Item Response Theory (IRT). The tool aims to enhance the learning process by offering more precise and tailored recommendations to meet the individual needs of students. For more details, visit ",
+      "link": "<a target=\"_blank\" href=\"https://tede.unioeste.br/handle/tede/7232\">the link.</a>"
     },
     "bachelor": {
       "university": "Federal University of Technology - Paraná",
       "title": "Bachelor's Degree in Information Technology - Web Systems",
       "period": "March 2017 - May 2021",
-      "description": "Focused on building complete and innovative digital solutions for web and mobile, mastering all stages of the process with high quality, security, and usability. Final Thesis in the Information Security discipline, titled: A Comparative Study Between Secure Software Development Processes."
+      "description": "Focused on building complete and innovative digital solutions for web and mobile, mastering all stages of the process with high quality, security, and usability. Final Thesis in the Information Security discipline, titled: A Comparative Study Between Secure Software Development Processes. For more details, visit ",
+      "link": "<a target=\"_blank\" href=\"https://repositorio.utfpr.edu.br/jspui/handle/1/25955\">the link.</a>"
     }
   },
   "portfolio": {

@@ -34,7 +34,7 @@
                 <!-- Language switcher -->
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a id="navbar-language" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                            aria-expanded="false">
                             Language
                         </a>
@@ -75,9 +75,9 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-8 col-sm-12 mt-lg-0 mt-4">
-                <span class="title-small">Hello</span>
-                <h1 class="mb-2 title"><span>I'm</span> Gustavo </h1>
-                <h1 class="mb-4 title"> a <span class="typed-text"></span><span class="cursor">&nbsp</span></h1>
+                <span id="banner-greeting" class="title-small">Hello</span>
+                <h1 class="mb-2 title"><span id="banner-introduction">I'm</span> Gustavo </h1>
+                <h1 class="mb-4 title"> <strong id="banner-profession">a</strong> <span class="typed-text"></span><span class="cursor">&nbsp</span></h1>
             </div>
         </div>
     </div>
@@ -95,14 +95,14 @@
                     </div>
                 </div>
                 <div class="col-lg-8 mt-lg-0 mt-5">
-                    <h5 class="title-small mb-2">Who am i?</h5>
-                    <p class="mt-lg-3 mt-2">
+                    <h5 id="about-title" class="title-small mb-2">Who am i?</h5>
+                    <p id="about-text-p1" class="mt-lg-3 mt-2">
                         Possuo graduação em Tecnologia em Sistemas para Internet, onde me aprofundei em Desenvolvimento Web, aprendendo tecnologias como HTML, CSS e Javascript para o Frontend e Node JS, Ruby on Rails e PHP Laravel para o Backend. Na parte de Segurança Web, obtive experiências com Defesa Cibernética, sendo este meu projeto de pesquisa de conclusão de curso.
                     </p>
-                    <p class="mt-lg-3 mt-2">
+                    <p id="about-text-p2" class="mt-lg-3 mt-2">
                         Com mais de cinco anos de experiência como Professor de Programação, evoluí minhas estratégias de ensino para transmitir conhecimento em Desenvolvimento Web e diversos Frameworks para uma base de alunos diversificada. Minha expertise também se estende à mentorias em Desenvolvimento de Jogos Digitais, Robótica e IoT.
                     </p>
-                    <p class="mt-lg-3 mt-2">
+                    <p id="about-text-p3" class="mt-lg-3 mt-2">
                         Recentemente desenvolvi um Sistema de Recomendação utilizando Java Spring Boot para uma empresa de educação a distância. Adquiri habilidades analíticas que envolvem processos estatísticos através da aplicação de Métodos Matemáticos na Computação. Além disso, também trabalhei com performance de software e linguagem R.
                     </p>
                     <a href="#download" class="btn btn-style btn-primary mt-lg-5 mt-4">Download CV</a>
@@ -116,23 +116,23 @@
 <!-- Education -->
 <section id="education" class="py-5">
     <div class="container py-lg-5 py-3">
-        <h5 class="title-small mb-2"> Education</h5>
-        <h3 class="mb-2">Universidade Tecnológica Federal do Paraná</h3>
-        <h4>Pós-graduação Lato Sensu - Especialização, Programação para Dispositivos Móveis</h4>
-        <span class="title-small">Maio de 2024 - Maio de 2026</span>
-        <p>
+        <h5 id="education-title" class="title-small mb-2"> Education</h5>
+        <h3 id="education-university-1" class="mb-2">Universidade Tecnológica Federal do Paraná</h3>
+        <h4 id="education-title-1">Pós-graduação Lato Sensu - Especialização, Programação para Dispositivos Móveis</h4>
+        <span id="education-period-1" class="title-small">Maio de 2024 - Maio de 2026</span>
+        <p id="education-description-1">
             Especialização focada em desenvolvimento de aplicações para dispositivos móveis, abrangendo desde conceitos fundamentais até técnicas avançadas. O programa inclui disciplinas como desenvolvimento Android, design de interfaces, gestão de projetos móveis, integração com serviços web, DevOps, monetização e programação em plataformas como Flutter, React Native e iOS.
         </p>
-        <h3 class="mt-4 mb-2">Universidade Estadual do Oeste do Paraná</h3>
-        <h4>Mestrado, Métodos de Computação Aplicada</h4>
-        <span class="title-small">Julho de 2021 - Fevereiro de 2024</span>
-        <p>
+        <h3 id="education-university-2" class="mt-4 mb-2">Universidade Estadual do Oeste do Paraná</h3>
+        <h4 id="education-title-2">Mestrado, Métodos de Computação Aplicada</h4>
+        <span id="education-period-2" class="title-small">Julho de 2021 - Fevereiro de 2024</span>
+        <p id="education-description-2">
             Projeto de um sistema para recomendação de conteúdo em plataformas adaptativas de ensino a distância.
         </p>
-        <h3 class="mt-4 mb-2">Universidade Tecnológica Federal do Paraná</h3>
-        <h4>Graduação em Tecnologia da Informação - Sistemas para Internet</h4>
-        <span class="title-small">Março 2017 - 2020</span>
-        <p>
+        <h3 id="education-university-3" class="mt-4 mb-2">Universidade Tecnológica Federal do Paraná</h3>
+        <h4 id="education-title-3">Graduação em Tecnologia da Informação - Sistemas para Internet</h4>
+        <span id="education-period-3" class="title-small">Março 2017 - 2020</span>
+        <p id="education-description-3">
             Focado na construção de soluções digitais completas e inovadoras para web e mobile, dominando todas as etapas do processo com alta qualidade, segurança e usabilidade.
             Trabalho de Conclusão de Curso na disciplina de Segurança da Informação, com o título: Um estudo comparativo entre processos de desenvolvimento de software seguro.
         </p>
@@ -252,8 +252,8 @@
         <div class="container py-lg-5">
             <div class="middle-section text-center">
                 <div class="section-width">
-                    <h5 class="title-small mb-2">Experiencias</h5>
-                    <h3 class="title-big mb-lg-5 mb-4">Programming languages</h3>
+                    <h5 id="languages-title" class="title-small mb-2">Experiencias</h5>
+                    <h3 id="languages-subtitle" class="title-big mb-lg-5 mb-4">Programming languages</h3>
                     <div class="row mt-lg-4 mt-3">
                         <div class="col-lg-3 col-md-3 col-6">
                             <i class="fa-brands fa-java"></i>
@@ -339,10 +339,9 @@
 <!-- hire me -->
 <section class="grid-quote text-center py-5">
     <div class="container py-3">
-        <h6 class="title-small">Get in touch</h6>
-        <h3 class="title-big mb-md-5 mb-4">Let's start a Project! Hire Me.</h3>
-        <a href="contact.html" class="btn btn-style btn-primary mr-2">Hire Me </a>
-        <a href="contact.html" class="btn btn-style btn-outline-primary">Get in touch</a>
+        <h6 id="contact-title" class="title-small">Get in touch</h6>
+        <h3 id="contact-subtitle" class="title-big mb-md-5 mb-4">Let's start a Project! Hire Me.</h3>
+        <a id="contact-button" href="contact.html" class="btn btn-style btn-primary mr-2">Hire Me </a>
     </div>
 </section>
 <!-- //hire me -->
@@ -353,7 +352,7 @@
         <div class="footer-content">
             <div class="row">
                 <div class="col-lg-8 footer-left">
-                    <p class="m-0">Design by <a href="https://github.com/gustavo-rm">Gustavo Malacarne</a></p>
+                    <p class="m-0"> <span id="footer-text">Design by</span> <a href="https://github.com/gustavo-rm">Gustavo Malacarne</a></p>
                 </div>
                 <div class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3">
                     <ul class="social m-0 p-0">
@@ -376,11 +375,15 @@
 
 <!-- all js scripts and files here -->
 <script src="js/jquery-3.3.1.min.js"></script><!-- default jQuery -->
+<script>
+    console.log(typeof $); // Deve imprimir 'function'
+</script>
 <script src="js/bootstrap/bootstrap.js"></script>
 <!-- owl carousel -->
 <script src="js/owl.carousel.js"></script>
 <script src="js/script.js"></script>
 <script src="js/canvas_animation.js"></script>
+<script src="js/language.js"></script>
 
 </body>
 </html>

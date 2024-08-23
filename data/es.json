@@ -1,4 +1,7 @@
 {
+  "navbar": {
+    "language": "Idioma"
+  },
   "banner": {
     "greeting": "Hola",
     "introduction": "Me llamo",
@@ -11,6 +14,7 @@
     "text-p3": "Recientemente desarrollé un Sistema de Recomendación utilizando Java Spring Boot para una empresa de educación a distancia. Adquirí habilidades analíticas que involucran procesos estadísticos mediante la aplicación de Métodos Matemáticos en la Computación. Además, también trabajé en la optimización de software y en el lenguaje R."
   },
   "education": {
+    "title": "Capacitación",
     "postgraduate": {
       "university": "Universidad Tecnológica Federal de Paraná",
       "title": "Especialización - Programación para Dispositivos Móviles",
@@ -21,13 +25,15 @@
       "university": "Universidad Estatal del Oeste de Paraná",
       "title": "Maestría - Métodos de Computación Aplicada",
       "period": "Julio de 2021 - Febrero de 2024",
-      "description": "Proyecto de un sistema para la recomendación de contenido en plataformas adaptativas de educación a distancia."
+      "description": "El trabajo titulado \"Recomendación de Estudios en el Entorno Virtual de Aprendizaje de AlfaCon Concursos Públicos: estudios con una API RESTful\" aborda la creación de una API integrada en el sistema de AlfaCon, enfocada en recomendar planes de estudio personalizados para estudiantes registrados. Esta API, basada en la Teoría del Aprendizaje Significativo, utiliza modelos de evaluación basados en la Teoría Clásica de los Tests (TCT) y la Teoría de Respuesta al Ítem (TRI). La herramienta tiene como objetivo mejorar el proceso de aprendizaje al ofrecer recomendaciones más precisas y adecuadas a las necesidades individuales de los estudiantes. Para más detalles, visite ",
+      "link": "<a target=\"_blank\" href=\"https://tede.unioeste.br/handle/tede/7232\">el enlace.</a>"
     },
     "bachelor": {
       "university": "Universidad Tecnológica Federal de Paraná",
       "title": "Licenciatura en Tecnología de la Información - Sistemas para Internet",
       "period": "Marzo de 2017 - Mayo de 2021",
-      "description": "Enfocado en la construcción de soluciones digitales completas e innovadoras para web y mobile, dominando todas las etapas del proceso con alta calidad, seguridad y usabilidad. Trabajo de Tesis en la asignatura de Seguridad de la Información, con el título: Un estudio comparativo entre procesos de desarrollo de software seguro."
+      "description": "Enfocado en la construcción de soluciones digitales completas e innovadoras para web y mobile, dominando todas las etapas del proceso con alta calidad, seguridad y usabilidad. Trabajo de Tesis en la asignatura de Seguridad de la Información, con el título: Un estudio comparativo entre procesos de desarrollo de software seguro. Para más detalles, visite ",
+      "link": "<a target=\"_blank\" href=\"https://repositorio.utfpr.edu.br/jspui/handle/1/25955\">el enlace.</a>"
     }
   },
   "portfolio": {
