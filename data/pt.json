@@ -26,14 +26,14 @@
       "title": "Mestrado - Métodos de Computação Aplicada",
       "period": "Julho de 2021 - Fevereiro de 2024",
       "description": "Trabalho intitulado \"Recomendação de Estudos no Ambiente Virtual de Aprendizado do AlfaCon Concursos Públicos: estudos com uma API RESTful\" aborda a criação de uma API acoplada ao sistema do AlfaCon, focada em recomendar estudos personalizados para alunos cadastrados. Essa API, fundamentada na Teoria da Aprendizagem Significativa, emprega modelos de avaliação baseados na Teoria Clássica dos Testes (TCT) e na Teoria de Resposta ao Item (TRI). Com isso, a ferramenta visa melhorar o processo de aprendizado ao oferecer recomendações mais precisas e adequadas às necessidades individuais dos estudantes. Para mais detalhes, acesse ",
-      "link": "<a target=\"_blank\" href=\"https://tede.unioeste.br/handle/tede/7232\">o link.</a>"
+      "link": "<a class=\"text-link\" target=\"_blank\" href=\"https://tede.unioeste.br/handle/tede/7232\">o link.</a>"
     },
     "bachelor": {
       "university": "Universidade Tecnológica Federal do Paraná",
       "title": "Graduação em Tecnologia da Informação - Sistemas para Internet",
       "period": "Março 2017 - Maio 2021",
       "description": "Focado na construção de soluções digitais completas e inovadoras para web e mobile, dominando todas as etapas do processo com alta qualidade, segurança e usabilidade. Trabalho de Conclusão de Curso na disciplina de Segurança da Informação, com o título: Um estudo comparativo entre processos de desenvolvimento de software seguro. Para mais detalhes, acesse ",
-      "link": "<a target=\"_blank\" href=\"https://repositorio.utfpr.edu.br/jspui/handle/1/25955\">o link.</a>"
+      "link": "<a class=\"text-link\" target=\"_blank\" href=\"https://repositorio.utfpr.edu.br/jspui/handle/1/25955\">o link.</a>"
     }
   },
   "portfolio": {

@@ -21,6 +21,17 @@ var mouse_ball = {
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+
+    if (window.innerWidth <= 768) { // Tamanho típico para smartphones
+        BALL_NUM = 30;
+        dis_limit = 150;
+    } else if (window.innerWidth <= 1024) { // Tamanho típico para tablets
+        BALL_NUM = 35;
+        dis_limit = 220;
+    } else { // Para telas maiores (desktops)
+        BALL_NUM = 45;
+        dis_limit = 320;
+    }
 }
 
 resizeCanvas(); // Chama a função uma vez ao carregar a página

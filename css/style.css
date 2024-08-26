@@ -176,7 +176,6 @@ p.white {
 }
 
 /*-- //container --*/
-
 .btn-style {
     padding: 12px 35px;
     font-size: 18px;
@@ -185,24 +184,19 @@ p.white {
     font-weight: 400;
     transition: 0.3s ease-in;
     border-radius: var(--border-radius);
+    background-color: var(--widget-bg);
+    border-color: var(--widget-bg);
+}
+
+.btn-style:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 .border-btn {
     border: 2px solid #fff;
     color: #fff;
     padding: 10px 35px;
-}
-
-.btn-white {
-    padding: 12px 35px;
-    font-size: 18px;
-    line-height: 28px;
-    text-transform: capitalize;
-    font-weight: 400;
-    transition: 0.3s ease-in;
-    border-radius: var(--border-radius);
-    background-color: #fff;
-    color: var(--primary-color);
 }
 
 a.link-style {
@@ -227,6 +221,14 @@ a.link-style:before {
 a.link-style:hover:before {
     width: 100px;
     transition: all .5s;
+}
+
+.text-link {
+    color: var(--primary-color);
+}
+
+.text-link:hover {
+    color: var(--secondary-color);
 }
 
 .grids-gap {
@@ -385,7 +387,6 @@ a.dropdown-item {
 
 a.dropdown-item:hover {
     color: var(--primary-color);
-    text-decoration: none !important;
 }
 
 a.dropdown-item.active {
@@ -666,6 +667,7 @@ span.cursor {
 
 #portfolio .box-wrap p {
     margin: 0;
+    text-align: justify;
 }
 
 #portfolio p.sample a {
