@@ -40,7 +40,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#" class="dropdown-item" onclick="changeLanguage('pt')"
+                                <a href="#" class="dropdown-item py-2" onclick="changeLanguage('pt')"
                                    aria-label="Portuguese">
                                     <img src="images/brazil-flag.png" alt="Portuguese (Brazil)"
                                          title="Portuguese (Brazil)" width="24">
@@ -48,13 +48,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="dropdown-item" onclick="changeLanguage('es')" aria-label="Spanish">
+                                <a href="#" class="dropdown-item py-2" onclick="changeLanguage('es')" aria-label="Spanish">
                                     <img src="images/spain-flag.png" alt="Spanish" title="Spanish" width="24">
                                     ES
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="dropdown-item" onclick="changeLanguage('en')" aria-label="English">
+                                <a href="#" class="dropdown-item py-2" onclick="changeLanguage('en')" aria-label="English">
                                     <img src="images/united-states-of-america.png" alt="English" title="English" width="24">
                                     EN
                                 </a>
@@ -105,7 +105,7 @@
                     <p id="about-text-p3" class="mt-lg-3 mt-2">
                         Recentemente desenvolvi um Sistema de Recomendação utilizando Java Spring Boot para uma empresa de educação a distância. Adquiri habilidades analíticas que envolvem processos estatísticos através da aplicação de Métodos Matemáticos na Computação. Além disso, também trabalhei com performance de software e linguagem R.
                     </p>
-                    <a href="#download" class="btn btn-style btn-primary mt-lg-5 mt-4">Download CV</a>
+                    <a id="download-cv" href="#download" class="btn btn-style btn-primary mt-lg-5 mt-4">Download CV</a>
                 </div>
             </div>
         </div>
@@ -144,6 +144,21 @@
 <section id="portfolio">
     <div class="blog py-5" id="services">
         <div class="container py-lg-5">
+            <!-- Modal Structure -->
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="imageModalLabel">Site Image</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img id="modal-image" src="images/site-image.jpg" alt="Site Image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <h5 class="title-small text-center">Portfolio</h5>
             <h3 class="title-big text-center mb-sm-5 mb-4">O que eu já fiz</h3>
             <div class="row">
@@ -159,7 +174,7 @@
                                     <h4><a href="#url">UI/UX Design</a></h4>
                                     <p>Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
                                         doloret quas saepe autem, dolor set.</p>
-                                    <a href="#read" class="read">Read more</a>
+                                    <a href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeModalImage('images/portfolio/site-image1.jpg')">Read more 1</a>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +189,7 @@
                                     <h4><a href="#url">Web Development</a></h4>
                                     <p>Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
                                         doloret quas saepe autem, dolor set.</p>
-                                    <a href="#read" class="read">Read more</a>
+                                    <a href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeModalImage('images/portfolio/site-image1.jpg')">Read more 1</a>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +204,7 @@
                                     <h4><a href="#url">Research & Analysis</a></h4>
                                     <p>Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
                                         doloret quas saepe autem, dolor set.</p>
-                                    <a href="#read" class="read">Read more</a>
+                                    <a href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeModalImage('images/portfolio/site-image1.jpg')">Read more 1</a>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +219,7 @@
                                     <h4><a href="#url">UI/UX Design</a></h4>
                                     <p>Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
                                         doloret quas saepe autem, dolor set.</p>
-                                    <a href="#read" class="read">Read more</a>
+                                    <a href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeModalImage('images/portfolio/site-image1.jpg')">Read more 1</a>
                                 </div>
                             </div>
                         </div>
@@ -219,7 +234,7 @@
                                     <h4><a href="#url">Web Development</a></h4>
                                     <p>Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
                                         doloret quas saepe autem, dolor set.</p>
-                                    <a href="#read" class="read">Read more</a>
+                                    <a href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeModalImage('images/portfolio/site-image1.jpg')">Read more 1</a>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +249,7 @@
                                     <h4><a href="#url">Research & Analysis</a></h4>
                                     <p>Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
                                         doloret quas saepe autem, dolor set.</p>
-                                    <a href="#read" class="read">Read more</a>
+                                    <a href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="changeModalImage('images/portfolio/site-image1.jpg')">Read more 1</a>
                                 </div>
                             </div>
                         </div>

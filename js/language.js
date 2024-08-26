@@ -74,6 +74,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 // Atualizar o conteúdo do footer
                 document.getElementById('footer-text').textContent = data.footer.text;
+
+                // Atualizar o link de download do CV
+                const cvPath = `data/cv/${language}-cv.pdf`;
+                document.getElementById('download-cv').setAttribute('href', cvPath);
+
+                // Remover fundo dos itens selecionados anteriormente
+                document.querySelectorAll('.dropdown-menu li').forEach(function(item) {
+                    item.style.backgroundColor = '';
+                });
+
+                // Adicionar fundo ao item selecionado
+                const selectedItem = document.querySelector(`.dropdown-item[onclick="changeLanguage('${language}')"]`).closest('li');
+                selectedItem.style.backgroundColor = 'var(--bg-light)';
             })
             .catch(error => {
                 console.error(error);

@@ -67,4 +67,9 @@ jQuery(document).ready(function($) {
 			1090: { items: 3 }
 		}
 	});
+
+	function changeModalImage(imageSrc) {
+		document.getElementById('modal-image').src = imageSrc;
+	}
+
 });
