@@ -63,13 +63,20 @@ jQuery(document).ready(function($) {
 		responsive: {
 			0: { items: 1 },
 			480: { items: 1 },
-			700: { items: 1 },
+			700: { items: 2 },
 			1090: { items: 3 }
 		}
 	});
 
+	// Atribuindo a imagem de forma dinâmica
 	function changeModalImage(imageSrc) {
 		document.getElementById('modal-image').src = imageSrc;
 	}
+
+	// Capturando o evento de clique no link `.read`
+	$(document).on('click', 'a.read', function() {
+		var imageSrc = $(this).data('image'); // Obtém o valor do atributo data-image
+		changeModalImage(imageSrc);
+	});
 
 });
