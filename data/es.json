@@ -1,7 +1,7 @@
 {
   "navbar": {
     "home": "Inicio",
-    "education": "Educación",
+    "education": "Capacitación",
     "portfolio": "Portafolio",
     "experiences": "Experiencias",
     "contact": "Contacto",
@@ -22,8 +22,8 @@
     "title": "Capacitación",
     "postgraduate": {
       "university": "Universidad Tecnológica Federal de Paraná",
-      "title": "Especialización - Programación para Dispositivos Móviles",
-      "period": "Mayo de 2024 - Mayo de 2026",
+      "title": "Especialización - Inteligencia Artificial",
+      "period": "Noviembre de 2024 - Noviembre de 2026",
       "description": "Especialización centrada en el desarrollo de software de IA para robótica, análisis de datos, reconocimiento de voz e imagen; trabajar con ingeniería de datos y big data; ofrecer consultoría para la aplicación de IA en estrategias empresariales y desarrollar soluciones eficientes para la medicina y la industria."
     },
     "master": {
@@ -42,25 +42,27 @@
     }
   },
   "portfolio": {
+    "title": "Portafolio",
+    "subtitle": "Lo que he hecho",
     "project-1": {
-      "title": "Título del proyecto",
-      "text": "Descripción del proyecto",
-      "button": "Ver más"
+      "title": "API de Recomendación",
+      "text": "Desarrollada en Java utilizando el framework Spring Boot para facilitar la creación de servicios RESTful. La base de datos MySQL almacena la información, con JPA interactuando con la base de datos. Las bibliotecas Apache Commons Math, jfreechart, RCaller y Apache Mahout se utilizaron para realizar cálculos estadísticos y análisis de datos.",
+      "button": "Ver Proyecto"
     },
     "project-2": {
-      "title": "Título del proyecto",
-      "text": "Descripción del proyecto",
-      "button": "Ver más"
+      "title": "Informe de Recomendación",
+      "text": "El frontend del sistema fue construido utilizando las tecnologías HTML, CSS y JavaScript, con el framework Bootstrap 5 para crear una interfaz moderna y responsiva. La biblioteca ApexCharts se empleó para generar gráficos interactivos, mientras que las bibliotecas jsPDF y html2canvas permiten convertir la plantilla HTML en un documento PDF.",
+      "button": "Ver Proyecto"
     },
     "project-3": {
-      "title": "Título del proyecto",
-      "text": "Descripción del proyecto",
-      "button": "Ver más"
+      "title": "Reopen Genesis Pass",
+      "text": "Usando Bootstrap 5, CSS3, HTML5, JavaScript y jQuery, fui responsable de construir la interfaz frontend de este sitio web. A través de un diseño intuitivo y responsivo, logré crear una experiencia de usuario agradable que refleja la identidad visual de la marca.",
+      "button": "Ver Proyecto"
     },
     "project-4": {
-      "title": "Título del proyecto",
-      "text": "Descripción del proyecto",
-      "button": "Ver más"
+      "title": "Gamo Rei Store",
+      "text": "El sistema de la tienda en línea fue desarrollado con Node.js y React.js. En el backend, Node.js proporcionó una arquitectura escalable y eficiente, especialmente con el uso de Express para crear rutas y MongoDB como base de datos. En el frontend, React.js fue esencial para crear una interfaz de usuario dinámica y responsiva, utilizando JSX para una integración fluida entre HTML y JavaScript, además de componentes reutilizables.",
+      "button": "Ver Proyecto"
     }
   },
   "languages": {

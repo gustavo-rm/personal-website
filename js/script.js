@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
 	// Typing text effect
 	const typedTextSpan = document.querySelector(".typed-text");
 	const cursorSpan = document.querySelector(".cursor");
-	const textArray = ["Web Developer", "FullStack Developer", "Comp. Science Master"];
+	const textArray = ["Data Analyst", "AI Researcher", "Web Developer", "FullStack Developer", "Comp. Science Master"];
 	const typingDelay = 200;
 	const erasingDelay = 10;
 	const newTextDelay = 100;
