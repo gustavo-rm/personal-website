@@ -14,6 +14,11 @@ document.addEventListener("DOMContentLoaded", function() {
             })
             .then(data => {
                 // Atualizar o conteúdo da navbar
+                document.getElementById('navbar-home').textContent = data.navbar.home;
+                document.getElementById('navbar-education').textContent = data.navbar.education;
+                document.getElementById('navbar-portfolio').textContent = data.navbar.portfolio;
+                document.getElementById('navbar-experiences').textContent = data.navbar.experiences;
+                document.getElementById('navbar-contact').textContent = data.navbar.contact;
                 document.getElementById('navbar-language').textContent = data.navbar.language;
 
                 // Atualizar o conteúdo da seção banner
@@ -93,8 +98,16 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     }
 
-    // Carregar a página inicialmente em português
-    changeLanguage('pt');
+    // Detecta a linguagem preferida do navegador
+    const userLanguage = navigator.language || navigator.userLanguage;
+    // Carrega o conteúdo baseado na linguagem detectada
+    if (userLanguage.startsWith("es")) {
+        changeLanguage('es');
+    } else if (userLanguage.startsWith("pt")) {
+        changeLanguage('pt');
+    } else {
+        changeLanguage('en');
+    }
 
     // Manipuladores de eventos para o menu de idiomas
     document.querySelectorAll('.dropdown-item').forEach(item => {

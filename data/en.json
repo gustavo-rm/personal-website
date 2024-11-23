@@ -1,5 +1,10 @@
 {
   "navbar": {
+    "home": "Home",
+    "education": "Education",
+    "portfolio": "Portfolio",
+    "experiences": "Experiences",
+    "contact": "Get in Touch",
     "language": "Language"
   },
   "banner": {
