@@ -398,6 +398,18 @@ a.dropdown-item.active {
     transform: translateX(-50px);
 }
 
+@media (max-width: 800px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        transform: translateX(-30px);
+    }
+}
+
+@media (max-width: 667px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        transform: translateX(-15px);
+    }
+}
+
 .navbar-expand-lg .navbar-nav .dropdown-menu:before {
     content: '';
     width: 14px;

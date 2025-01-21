@@ -1,5 +1,9 @@
+let currentLanguage = 'en'; // Define um idioma padrão
+
 // Função para carregar e aplicar o conteúdo do JSON baseado no idioma selecionado
 function changeLanguage(language) {
+    currentLanguage = language; // Atualiza o idioma atual
+
     // Caminho para o arquivo JSON com base no idioma selecionado
     const filePath = `data/${language}.json`;
 
@@ -87,7 +91,7 @@ function changeLanguage(language) {
             document.getElementById('download-cv').setAttribute('href', cvPath);
 
             // Remover fundo dos itens selecionados anteriormente
-            document.querySelectorAll('.dropdown-menu li').forEach(function(item) {
+            document.querySelectorAll('.dropdown-menu li').forEach(function (item) {
                 item.style.backgroundColor = '';
             });
 
@@ -100,7 +104,29 @@ function changeLanguage(language) {
         });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+function downloadCV(language) {
+    // Define o caminho do arquivo baseado no idioma
+    const filePath = language.startsWith('pt') ? 'data/cv/CV-PT.pdf' : 'data/cv/CV-EN.pdf';
+
+    // Cria um elemento de link para o download
+    const link = document.createElement('a');
+    link.href = filePath;
+    link.download = filePath.split('/').pop(); // Define o nome do arquivo
+
+    // Adiciona o link ao DOM, dispara o clique e remove o link
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+// Adiciona um evento ao botão de download
+const downloadButton = document.getElementById('download-cv');
+downloadButton.addEventListener('click', (event) => {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    downloadCV(currentLanguage); // Passa o idioma atual
+});
+
+document.addEventListener("DOMContentLoaded", function () {
     // Detecta a linguagem preferida do navegador
     const userLanguage = navigator.language || navigator.userLanguage;
     // Carrega o conteúdo baseado na linguagem detectada
@@ -114,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Manipuladores de eventos para o menu de idiomas
     document.querySelectorAll('.dropdown-item').forEach(item => {
-        item.addEventListener('click', function(e) {
+        item.addEventListener('click', function (e) {
             e.preventDefault(); // Impede o comportamento padrão do link
             const language = this.getAttribute('onclick').match(/'(\w+)'/)[1];
             changeLanguage(language);
