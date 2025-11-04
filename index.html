@@ -19,7 +19,7 @@
     <!-- CSS -->
     <link type="text/css" href="css/bootstrap/bootstrap.css" rel="stylesheet">
     <link type="text/css" href="css/style.css" rel="stylesheet">
-    <link type="text/css" href="css/owl-carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/83102ea232.js" crossorigin="anonymous"></script>
@@ -180,98 +180,100 @@
             <h3 id="portfolio-subtitle" class="title-big text-center mb-sm-5 mb-4">O que eu já fiz</h3>
             <div class="row">
                 <div class="col-md-12 mx-auto pr-2">
-                    <div class="owl-two owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="card">
-                                <div class="box-wrap">
-                                    <div class="icon">
-                                        <span class="fa fa-pencil-square-o"></span>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="fa fa-pencil-square-o"></span>
+                                        </div>
+                                        <h4 class="number">01</h4>
+                                        <h4><a id="project-1-title" href="#url"></a></h4>
+                                        <p id="project-1-text">
+                                        </p>
+                                        <a id="project-1-button" href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/dashboard.png"></a>
                                     </div>
-                                    <h4 class="number">01</h4>
-                                    <h4><a id="project-1-title" href="#url"></a></h4>
-                                    <p id="project-1-text">
-                                    </p>
-                                    <a id="project-1-button" href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/dashboard.png"></a>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="item">
-                            <div class="card">
-                                <div class="box-wrap">
-                                    <div class="icon">
-                                        <span class="fa fa-laptop"></span>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="fa fa-laptop"></span>
+                                        </div>
+                                        <h4 class="number">02</h4>
+                                        <h4><a id="project-2-title" href="#url">Relatório de Recomendação</a></h4>
+                                        <p id="project-2-text">
+                                            O frontend do sistema foi construído utilizando as tecnologias HTML, CSS e JavaScript, com o framework Bootstrap 5 para criar uma interface responsiva e moderna. A biblioteca ApexCharts foi empregada para gerar gráficos interativos, enquanto as bibliotecas jsPDF e html2canvas possibilitam a conversão do template HTML em um documento PDF.
+                                        </p>
+                                        <a id="project-2-button" href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/relatorio.png">Ver Projeto</a>
                                     </div>
-                                    <h4 class="number">02</h4>
-                                    <h4><a id="project-2-title" href="#url">Relatório de Recomendação</a></h4>
-                                    <p id="project-2-text">
-                                        O frontend do sistema foi construído utilizando as tecnologias HTML, CSS e JavaScript, com o framework Bootstrap 5 para criar uma interface responsiva e moderna. A biblioteca ApexCharts foi empregada para gerar gráficos interativos, enquanto as bibliotecas jsPDF e html2canvas possibilitam a conversão do template HTML em um documento PDF.
-                                    </p>
-                                    <a id="project-2-button" href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/relatorio.png">Ver Projeto</a>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="item">
-                            <div class="card">
-                                <div class="box-wrap">
-                                    <div class="icon">
-                                        <span class="fa fa-area-chart"></span>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="fa fa-area-chart"></span>
+                                        </div>
+                                        <h4 class="number">03</h4>
+                                        <h4><a id="project-3-title" href="#url">Reopen Genesis Pass</a></h4>
+                                        <p id="project-3-text">
+                                            Utilizando Bootstrap 5, CSS3, HTML5, JavaScript e jQuery, fui responsável por construir a interface frontend deste site. Através de um design responsivo e intuitivo, consegui criar uma experiência de usuário agradável que reflete a identidade visual da marca.
+                                        </p>
+                                        <a id="project-3-button" href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/genesis-pass.png">Ver Projeto</a>
                                     </div>
-                                    <h4 class="number">03</h4>
-                                    <h4><a id="project-3-title" href="#url">Reopen Genesis Pass</a></h4>
-                                    <p id="project-3-text">
-                                        Utilizando Bootstrap 5, CSS3, HTML5, JavaScript e jQuery, fui responsável por construir a interface frontend deste site. Através de um design responsivo e intuitivo, consegui criar uma experiência de usuário agradável que reflete a identidade visual da marca.
-                                    </p>
-                                    <a id="project-3-button" href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/genesis-pass.png">Ver Projeto</a>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="item">
-                            <div class="card">
-                                <div class="box-wrap">
-                                    <div class="icon">
-                                        <span class="fa fa-pencil-square-o"></span>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="fa fa-pencil-square-o"></span>
+                                        </div>
+                                        <h4 class="number">04</h4>
+                                        <h4><a id="project-4-title" href="#url">Gamo Rei Store</a></h4>
+                                        <p id="project-4-text">
+                                            O sistema da loja virtual foi desenvolvido com Node.js e React.js. No backend, Node.js proporcionou uma arquitetura escalável e eficiente, especialmente com o uso do Express para a criação de rotas e do MongoDB como banco de dados. No frontend, React.js foi essencial para criar uma interface de usuário dinâmica e responsiva, utilizando o JSX para uma integração fluida entre HTML e JavaScript, além de componentes reutilizáveis.
+                                        </p>
+                                        <a id="project-4-button" href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/gamo-store.png">Ver Projeto</a>
                                     </div>
-                                    <h4 class="number">04</h4>
-                                    <h4><a id="project-4-title" href="#url">Gamo Rei Store</a></h4>
-                                    <p id="project-4-text">
-                                        O sistema da loja virtual foi desenvolvido com Node.js e React.js. No backend, Node.js proporcionou uma arquitetura escalável e eficiente, especialmente com o uso do Express para a criação de rotas e do MongoDB como banco de dados. No frontend, React.js foi essencial para criar uma interface de usuário dinâmica e responsiva, utilizando o JSX para uma integração fluida entre HTML e JavaScript, além de componentes reutilizáveis.
-                                    </p>
-                                    <a id="project-4-button" href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/gamo-store.png">Ver Projeto</a>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="item">
-                            <div class="card">
-                                <div class="box-wrap">
-                                    <div class="icon">
-                                        <span class="fa fa-laptop"></span>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="fa fa-laptop"></span>
+                                        </div>
+                                        <h4 class="number">05</h4>
+                                        <h4><a href="#url">Gamo Rei App</a></h4>
+                                        <p>
+                                            Aplicativo Android desenvolvido para uma loja virtual utilizando Kotlin. Utilizei o Android Jetpack para simplificar o desenvolvimento, com destaque para o uso do Room para o gerenciamento de banco de dados local e do ViewModel para a gestão eficiente do ciclo de vida das atividades. Além disso, implementei a arquitetura MVVM (Model-View-ViewModel) para separar as responsabilidades de forma clara, buscando um código mais organizado e fácil de manter.
+                                        </p>
+                                        <a href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/gamo-app.png">Ver Projeto</a>
                                     </div>
-                                    <h4 class="number">05</h4>
-                                    <h4><a href="#url">Gamo Rei App</a></h4>
-                                    <p>
-                                        Aplicativo Android desenvolvido para uma loja virtual utilizando Kotlin. Utilizei o Android Jetpack para simplificar o desenvolvimento, com destaque para o uso do Room para o gerenciamento de banco de dados local e do ViewModel para a gestão eficiente do ciclo de vida das atividades. Além disso, implementei a arquitetura MVVM (Model-View-ViewModel) para separar as responsabilidades de forma clara, buscando um código mais organizado e fácil de manter.
-                                    </p>
-                                    <a href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/gamo-app.png">Ver Projeto</a>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="item">
-                            <div class="card">
-                                <div class="box-wrap">
-                                    <div class="icon">
-                                        <span class="fa fa-area-chart"></span>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="fa fa-area-chart"></span>
+                                        </div>
+                                        <h4 class="number">06</h4>
+                                        <h4><a href="#url">Gym App</a></h4>
+                                        <p>
+                                            Aplicativo Android desenvolvido para uma academia utilizando Kotlin, focando em funcionalidades que otimizam a gestão e o engajamento dos usuários. Integrei o Firebase para gerenciar o banco de dados em nuvem. Além disso, utilizei o Firebase Authentication para um sistema de login seguro e eficiente, e o Firebase Cloud Messaging para o envio de notificações personalizadas.
+                                        </p>
+                                        <a href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/gym-app.png">Ver Projeto Projeto</a>
                                     </div>
-                                    <h4 class="number">06</h4>
-                                    <h4><a href="#url">Gym App</a></h4>
-                                    <p>
-                                        Aplicativo Android desenvolvido para uma academia utilizando Kotlin, focando em funcionalidades que otimizam a gestão e o engajamento dos usuários. Integrei o Firebase para gerenciar o banco de dados em nuvem. Além disso, utilizei o Firebase Authentication para um sistema de login seguro e eficiente, e o Firebase Cloud Messaging para o envio de notificações personalizadas.
-                                    </p>
-                                    <a href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/gym-app.png">Ver Projeto Projeto</a>
                                 </div>
                             </div>
                         </div>
@@ -401,12 +403,11 @@
 <!-- //Footer -->
 
 <!-- all js scripts and files here -->
-<script src="js/jquery-3.3.1.min.js"></script> <!-- default jQuery -->
 <script src="js/bootstrap/bootstrap.js"></script> <!-- bootstrap 5 -->
 <script src="js/script.js"></script>
 <script src="js/language.js"></script>
 <script src="js/canvas_animation.js"></script>
-<script src="js/owl.carousel.js"></script> <!-- owl carousel -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </body>
 </html>

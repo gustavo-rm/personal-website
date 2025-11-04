@@ -1,13 +1,94 @@
-let currentLanguage = 'en'; // Define um idioma padrão
+const config = {
+    paths: {
+        language: 'data/',
+        cv: 'data/cv/'
+    },
+    languages: ['en', 'es', 'pt']
+};
 
-// Função para carregar e aplicar o conteúdo do JSON baseado no idioma selecionado
+let currentLanguage = 'en';
+
+function updateElement(id, property, value) {
+    const element = document.getElementById(id);
+    if (element) {
+        element[property] = value;
+    }
+}
+
+function updateCVPath(language) {
+    const cvPath = `${config.paths.cv}${language}-cv.pdf`;
+    const downloadButton = document.getElementById('download-cv');
+    if (downloadButton) {
+        downloadButton.setAttribute('href', cvPath);
+    }
+}
+
+function updateSelectedLanguageUI(language) {
+    document.querySelectorAll('.dropdown-menu li').forEach(item => {
+        item.style.backgroundColor = '';
+    });
+
+    const selectedItem = document.querySelector(`.dropdown-item[onclick="changeLanguage('${language}')"]`);
+    if (selectedItem) {
+        selectedItem.closest('li').style.backgroundColor = 'var(--bg-light)';
+    }
+}
+
+function updatePageContent(data) {
+    // Navbar
+    for (const key in data.navbar) {
+        updateElement(`navbar-${key}`, 'textContent', data.navbar[key]);
+    }
+
+    // Banner
+    for (const key in data.banner) {
+        updateElement(`banner-${key}`, 'textContent', data.banner[key]);
+    }
+
+    // About
+    updateElement('about-title', 'textContent', data.about.title);
+    updateElement('about-text-p1', 'textContent', data.about['text-p1']);
+    updateElement('about-text-p2', 'textContent', data.about['text-p2']);
+    updateElement('about-text-p3', 'textContent', data.about['text-p3']);
+
+    // Education
+    updateElement('education-title', 'textContent', data.education.title);
+    ['postgraduate', 'master', 'bachelor'].forEach((level, index) => {
+        const education = data.education[level];
+        const i = index + 1;
+        updateElement(`education-university-${i}`, 'textContent', education.university);
+        updateElement(`education-title-${i}`, 'textContent', education.title);
+        updateElement(`education-period-${i}`, 'textContent', education.period);
+        updateElement(`education-description-${i}`, 'innerHTML', education.description + (education.link || ''));
+    });
+
+    // Portfolio
+    updateElement('portfolio-title', 'textContent', data.portfolio.title);
+    updateElement('portfolio-subtitle', 'textContent', data.portfolio.subtitle);
+    for (let i = 1; i <= 4; i++) {
+        const project = data.portfolio[`project-${i}`];
+        updateElement(`project-${i}-title`, 'textContent', project.title);
+        updateElement(`project-${i}-text`, 'textContent', project.text);
+        updateElement(`project-${i}-button`, 'textContent', project.button);
+    }
+
+    // Languages
+    updateElement('languages-title', 'textContent', data.languages.title);
+    updateElement('languages-subtitle', 'textContent', data.languages.subtitle);
+
+    // Contact
+    updateElement('contact-title', 'textContent', data.contact.title);
+    updateElement('contact-subtitle', 'textContent', data.contact.subtitle);
+    updateElement('contact-button', 'textContent', data.contact.button);
+
+    // Footer
+    updateElement('footer-text', 'textContent', data.footer.text);
+}
+
 function changeLanguage(language) {
-    currentLanguage = language; // Atualiza o idioma atual
+    currentLanguage = language;
+    const filePath = `${config.paths.language}${language}.json`;
 
-    // Caminho para o arquivo JSON com base no idioma selecionado
-    const filePath = `data/${language}.json`;
-
-    // Usando fetch para carregar o arquivo JSON
     fetch(filePath)
         .then(response => {
             if (!response.ok) {
@@ -16,132 +97,46 @@ function changeLanguage(language) {
             return response.json();
         })
         .then(data => {
-            // Atualizar o conteúdo da navbar
-            document.getElementById('navbar-home').textContent = data.navbar.home;
-            document.getElementById('navbar-education').textContent = data.navbar.education;
-            document.getElementById('navbar-portfolio').textContent = data.navbar.portfolio;
-            document.getElementById('navbar-experiences').textContent = data.navbar.experiences;
-            document.getElementById('navbar-contact').textContent = data.navbar.contact;
-            document.getElementById('navbar-language').textContent = data.navbar.language;
-
-            // Atualizar o conteúdo da seção banner
-            document.getElementById('banner-greeting').textContent = data.banner.greeting;
-            document.getElementById('banner-introduction').textContent = data.banner.introduction;
-            document.getElementById('banner-profession').textContent = data.banner.profession;
-
-            // Atualizar o conteúdo da seção about
-            document.getElementById('about-title').textContent = data.about.title;
-            document.getElementById('about-text-p1').textContent = data.about['text-p1'];
-            document.getElementById('about-text-p2').textContent = data.about['text-p2'];
-            document.getElementById('about-text-p3').textContent = data.about['text-p3'];
-
-            //Atualizar o conteúdo da seção education
-            document.getElementById('education-title').textContent = data.education.title;
-            document.getElementById('education-university-1').textContent = data.education['postgraduate'].university;
-            document.getElementById('education-title-1').textContent = data.education['postgraduate'].title;
-            document.getElementById('education-period-1').textContent = data.education['postgraduate'].period;
-            document.getElementById('education-description-1').innerHTML = data.education['postgraduate'].description;
-
-            document.getElementById('education-university-2').textContent = data.education['master'].university;
-            document.getElementById('education-title-2').textContent = data.education['master'].title;
-            document.getElementById('education-period-2').textContent = data.education['master'].period;
-            document.getElementById('education-description-2').textContent = data.education['master'].description;
-            document.getElementById('education-description-2').innerHTML += data.education['master'].link;
-
-            document.getElementById('education-university-3').textContent = data.education['bachelor'].university;
-            document.getElementById('education-title-3').textContent = data.education['bachelor'].title;
-            document.getElementById('education-period-3').textContent = data.education['bachelor'].period;
-            document.getElementById('education-description-3').textContent = data.education['bachelor'].description;
-            document.getElementById('education-description-3').innerHTML += data.education['bachelor'].link;
-
-            // Atualizar o conteúdo da seção portfolio
-            document.getElementById('portfolio-title').textContent = data.portfolio.title;
-            document.getElementById('portfolio-subtitle').textContent = data.portfolio.subtitle;
-
-            document.getElementById('project-1-title').textContent = data.portfolio['project-1'].title;
-            document.getElementById('project-1-text').textContent = data.portfolio['project-1'].text;
-            document.getElementById('project-1-button').textContent = data.portfolio['project-1'].button;
-
-            document.getElementById('project-2-title').textContent = data.portfolio['project-2'].title;
-            document.getElementById('project-2-text').textContent = data.portfolio['project-2'].text;
-            document.getElementById('project-2-button').textContent = data.portfolio['project-2'].button;
-
-            document.getElementById('project-3-title').textContent = data.portfolio['project-3'].title;
-            document.getElementById('project-3-text').textContent = data.portfolio['project-3'].text;
-            document.getElementById('project-3-button').textContent = data.portfolio['project-3'].button;
-
-            document.getElementById('project-4-title').textContent = data.portfolio['project-4'].title;
-            document.getElementById('project-4-text').textContent = data.portfolio['project-4'].text;
-            document.getElementById('project-4-button').textContent = data.portfolio['project-4'].button;
-
-            // Atualizar o conteúdo da seção languages
-            document.getElementById('languages-title').textContent = data.languages.title;
-            document.getElementById('languages-subtitle').textContent = data.languages.subtitle;
-
-            // Atualizar o conteúdo da seção contact
-            document.getElementById('contact-title').textContent = data.contact.title;
-            document.getElementById('contact-subtitle').textContent = data.contact.subtitle;
-            document.getElementById('contact-button').textContent = data.contact.button;
-
-            // Atualizar o conteúdo do footer
-            document.getElementById('footer-text').textContent = data.footer.text;
-
-            // Atualizar o link de download do CV
-            const cvPath = `data/cv/${language}-cv.pdf`;
-            document.getElementById('download-cv').setAttribute('href', cvPath);
-
-            // Remover fundo dos itens selecionados anteriormente
-            document.querySelectorAll('.dropdown-menu li').forEach(function (item) {
-                item.style.backgroundColor = '';
-            });
-
-            // Adicionar fundo ao item selecionado
-            const selectedItem = document.querySelector(`.dropdown-item[onclick="changeLanguage('${language}')"]`).closest('li');
-            selectedItem.style.backgroundColor = 'var(--bg-light)';
+            updatePageContent(data);
+            updateCVPath(language);
+            updateSelectedLanguageUI(language);
         })
         .catch(error => {
             console.error(error);
         });
 }
 
-function downloadCV(language) {
-    // Define o caminho do arquivo baseado no idioma
-    const filePath = language.startsWith('pt') ? 'data/cv/CV-PT.pdf' : 'data/cv/CV-EN.pdf';
-
-    // Cria um elemento de link para o download
+function downloadCV() {
+    const filePath = `${config.paths.cv}${currentLanguage}-cv.pdf`;
     const link = document.createElement('a');
     link.href = filePath;
-    link.download = filePath.split('/').pop(); // Define o nome do arquivo
-
-    // Adiciona o link ao DOM, dispara o clique e remove o link
+    link.download = filePath.split('/').pop();
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 }
 
-// Adiciona um evento ao botão de download
-const downloadButton = document.getElementById('download-cv');
-downloadButton.addEventListener('click', (event) => {
-    event.preventDefault(); // Impede o comportamento padrão do link
-    downloadCV(currentLanguage); // Passa o idioma atual
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Detecta a linguagem preferida do navegador
+document.addEventListener("DOMContentLoaded", () => {
     const userLanguage = navigator.language || navigator.userLanguage;
-    // Carrega o conteúdo baseado na linguagem detectada
+    let initialLanguage = 'en';
     if (userLanguage.startsWith("es")) {
-        changeLanguage('es');
+        initialLanguage = 'es';
     } else if (userLanguage.startsWith("pt")) {
-        changeLanguage('pt');
-    } else {
-        changeLanguage('en');
+        initialLanguage = 'pt';
+    }
+    changeLanguage(initialLanguage);
+
+    const downloadButton = document.getElementById('download-cv');
+    if(downloadButton) {
+        downloadButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            downloadCV();
+        });
     }
 
-    // Manipuladores de eventos para o menu de idiomas
     document.querySelectorAll('.dropdown-item').forEach(item => {
         item.addEventListener('click', function (e) {
-            e.preventDefault(); // Impede o comportamento padrão do link
+            e.preventDefault();
             const language = this.getAttribute('onclick').match(/'(\w+)'/)[1];
             changeLanguage(language);
         });
