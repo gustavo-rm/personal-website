@@ -11,7 +11,12 @@ let currentLanguage = 'en';
 function updateElement(id, property, value) {
     const element = document.getElementById(id);
     if (element) {
-        element[property] = value;
+        if (property.startsWith('data-')) {
+            const dataKey = property.replace('data-', '');
+            element.dataset[dataKey] = value;
+        } else {
+            element[property] = value;
+        }
     }
 }
 
@@ -70,6 +75,7 @@ function updatePageContent(data) {
         updateElement(`project-${i}-title`, 'textContent', project.title);
         updateElement(`project-${i}-text`, 'textContent', project.text);
         updateElement(`project-${i}-button`, 'textContent', project.button);
+        updateElement(`project-${i}-button`, 'data-image', project.image);
     }
 
     // Languages

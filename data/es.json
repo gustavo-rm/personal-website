@@ -47,47 +47,56 @@
     "project-1": {
       "title": "Sistema RAG",
       "text": "Sistema de Generación Aumentada por Recuperación (RAG) desarrollado en Python. El pipeline procesa y divide (chunking) los documentos, genera embeddings con modelos de Hugging Face y los almacena en ChromaDB. Cuando un usuario realiza una pregunta, el sistema recupera el contexto relevante desde ChromaDB y lo inyecta en un prompt para un LLM (como Llama 2), que luego genera una respuesta precisa y basada en los hechos recuperados.",
-      "button": "Ver Proyecto"
+      "button": "Ver Proyecto",
+      "image": "images/portfolio/"
     },
     "project-2": {
       "title": "Planificador de Estudios Dinámico",
       "text": "API RESTful sin estado construida con Spring Boot, que utiliza un Algoritmo Genético para determinar la asignación estratégica del esfuerzo entre las materias, con su función de fitness calibrada por principios del Aprendizaje Significativo. Un motor de programación táctica aplica heurísticas basadas en las teorías de la Curva del Olvido (para la repetición espaciada) y de la Carga Cognitiva (para equilibrar la intensidad diaria de estudio).",
-      "button": "Ver Proyecto"
+      "button": "Ver Proyecto",
+      "image": "images/portfolio/study-plan.png"
     },
     "project-3": {
       "title": "Predicción de la Carga Cognitiva de los Estudiantes",
       "text": "Utiliza Python para estimar la carga cognitiva del estudiante, combinando datos de los cursos y de bienestar. Con Pandas para el procesamiento de datos, el sistema aplica modelos de Scikit-learn (como la Regresión Lineal y Logística) para analizar y ponderar objetivamente los factores de dificultad del curso y los indicadores de estrés del alumno (Distress vs. Eustrés). El resultado es una puntuación unificada de carga cognitiva, normalizada con MinMaxScaler.",
-      "button": "Ver Proyecto"
+      "button": "Ver Proyecto",
+      "image": "images/portfolio/"
     },
     "project-4": {
       "title": "API de Recomendación",
       "text": "Desarrollada en Java, utilizando el framework Spring Boot para facilitar la creación de servicios RESTful. La base de datos MySQL almacena la información, con JPA interactuando con la base de datos. Para realizar cálculos estadísticos y análisis de datos, se utilizaron las bibliotecas Apache Commons Math, jfreechart, RCaller y Apache Mahout.",
-      "button": "Ver Proyecto"
+      "button": "Ver Proyecto",
+      "image": "images/portfolio/dashboard.png"
     },
     "project-5": {
       "title": "Informe de Recomendación",
       "text": "El frontend del sistema fue construido utilizando HTML, CSS y JavaScript, con el framework Bootstrap 5 para crear una interfaz moderna y responsiva. La biblioteca ApexCharts fue utilizada para generar gráficos interactivos, mientras que jsPDF y html2canvas permiten convertir la plantilla HTML en un documento PDF.",
-      "button": "Ver Proyecto"
+      "button": "Ver Proyecto",
+      "image": "images/portfolio/relatorio.png"
     },
     "project-6": {
       "title": "Reopen Genesis Pass",
       "text": "Utilizando Bootstrap 5, CSS3, HTML5, JavaScript y jQuery, fui responsable de construir la interfaz frontend de este sitio web. A través de un diseño responsivo e intuitivo, logré crear una experiencia de usuario agradable que refleja la identidad visual de la marca.",
-      "button": "Ver Proyecto"
+      "button": "Ver Proyecto",
+      "image": "images/portfolio/genesis-pass.png"
     },
     "project-7": {
       "title": "Gamo Rei Store",
       "text": "En el backend, Node.js proporcionó una arquitectura escalable y eficiente, especialmente con el uso de Express para la creación de rutas y de MongoDB como base de datos. En el frontend, React.js fue esencial para crear una interfaz de usuario dinámica y responsiva, utilizando JSX para una integración fluida entre HTML y JavaScript, además de componentes reutilizables.",
-      "button": "Ver Proyecto"
+      "button": "Ver Proyecto",
+      "image": "images/portfolio/gamo-store.png"
     },
     "project-8": {
       "title": "Gamo Rei App",
       "text": "Aplicación Android desarrollada para una tienda virtual utilizando Kotlin. Se usa Room para la gestión de la base de datos local y ViewModel para la gestión eficiente del ciclo de vida de las actividades. Además, implementé la arquitectura MVVM (Model-View-ViewModel) para separar las responsabilidades de manera clara, organizada y fácil de mantener.",
-      "button": "Ver Proyecto"
+      "button": "Ver Proyecto",
+      "image": "images/portfolio/gamo-app.png"
     },
     "project-9": {
       "title": "Gym App",
       "text": "Aplicación Android desarrollada para un gimnasio utilizando Kotlin, centrada en funcionalidades que optimizan la gestión y el compromiso de los usuarios. Integré Firebase para gestionar la base de datos en la nube. Además, utilicé Firebase Authentication para un sistema de inicio de sesión seguro y eficiente, y Firebase Cloud Messaging para el envío de notificaciones personalizadas.",
-      "button": "Ver Proyecto"
+      "button": "Ver Proyecto",
+      "image": "images/portfolio/gym-app.png"
     }
   },
   "languages": {
