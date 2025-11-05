@@ -65,7 +65,7 @@ function updatePageContent(data) {
     // Portfolio
     updateElement('portfolio-title', 'textContent', data.portfolio.title);
     updateElement('portfolio-subtitle', 'textContent', data.portfolio.subtitle);
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= 9; i++) {
         const project = data.portfolio[`project-${i}`];
         updateElement(`project-${i}-title`, 'textContent', project.title);
         updateElement(`project-${i}-text`, 'textContent', project.text);

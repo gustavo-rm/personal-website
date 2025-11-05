@@ -52,21 +52,27 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // SwiperJS setup
-    const swiper = new Swiper('.swiper-container', {
-        loop: true,
-        margin: 30,
-        nav: false,
-        responsiveClass: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
+    const swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
         },
         breakpoints: {
-            0: { slidesPerView: 1 },
-            480: { slidesPerView: 1 },
-            700: { slidesPerView: 2 },
-            1090: { slidesPerView: 3 }
-        }
+            0: { // Smartphones
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            768: { // Tablets
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1024: { // Desktop
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        },
     });
 
     // Modal image functionality
