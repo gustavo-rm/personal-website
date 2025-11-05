@@ -1,17 +1,16 @@
-jQuery.noConflict();
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
     // Move top button functionality
+    const moveTopButton = document.getElementById("movetop");
+
     function toggleMoveTopButton() {
-        const moveTopButton = document.getElementById("movetop");
         moveTopButton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
     }
 
-    window.onscroll = toggleMoveTopButton;
-
-    document.getElementById("movetop").onclick = function () {
+    window.addEventListener('scroll', toggleMoveTopButton);
+    moveTopButton.addEventListener('click', () => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-    };
+    });
 
     // Typing text effect
     const typedTextSpan = document.querySelector(".typed-text");
@@ -48,41 +47,56 @@ jQuery(document).ready(function ($) {
         }
     }
 
-    if (textArray.length) setTimeout(type, newTextDelay + 250);
-
-    // Owl Carousel setup
-    $('.owl-two').owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: false,
-        responsiveClass: true,
-        autoplay: false,
-        autoplayTimeout: 5000,
-        autoplaySpeed: 1000,
-        autoplayHoverPause: false,
-        responsive: {
-            0: {items: 1},
-            480: {items: 1},
-            700: {items: 2},
-            1090: {items: 3}
-        }
-    });
-
-    // Atribuindo a imagem de forma dinâmica
-    function changeModalImage(imageSrc) {
-        document.getElementById('modal-image').src = imageSrc;
+    if (textArray.length) {
+        setTimeout(type, newTextDelay + 250);
     }
 
-    // Capturando o evento de clique no link `.read`
-    $(document).on('click', 'a.read', function () {
-        var imageSrc = $(this).data('image'); // Obtém o valor do atributo data-image
-        changeModalImage(imageSrc);
+    // SwiperJS setup
+    const swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            0: { // Smartphones
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            768: { // Tablets
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1024: { // Desktop
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        },
     });
 
-    $('.navbar-nav .nav-link, .navbar-nav .dropdown-item').on('click', function (event) {
-        if (!$(this).hasClass('dropdown-toggle') && $('.navbar-collapse').hasClass('show')) {
-            $('.navbar-toggler').click(); // Fecha o menu apenas se não for um dropdown-toggle
+    // Modal image functionality
+    function changeModalImage(imageSrc) {
+        const modalImage = document.getElementById('modal-image');
+        if (modalImage) {
+            modalImage.src = imageSrc;
+        }
+    }
+
+    document.addEventListener('click', function (event) {
+        if (event.target.matches('a.read')) {
+            const imageSrc = event.target.getAttribute('data-image');
+            if (imageSrc) {
+                changeModalImage(imageSrc);
+            }
+        }
+
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarToggler && navbarCollapse && navbarCollapse.classList.contains('show')) {
+            if (event.target.matches('.nav-link:not(.dropdown-toggle), .dropdown-item')) {
+                navbarToggler.click();
+            }
         }
     });
-
 });

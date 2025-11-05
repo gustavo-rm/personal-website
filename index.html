@@ -19,7 +19,7 @@
     <!-- CSS -->
     <link type="text/css" href="css/bootstrap/bootstrap.css" rel="stylesheet">
     <link type="text/css" href="css/style.css" rel="stylesheet">
-    <link type="text/css" href="css/owl-carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/83102ea232.js" crossorigin="anonymous"></script>
@@ -31,7 +31,9 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg stroke">
             <a class="navbar-brand" href="#">Gustavo R.</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -52,7 +54,8 @@
                         <a id="navbar-contact" class="nav-link" href="#contact">Contato</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a id="navbar-language" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a id="navbar-language" class="nav-link dropdown-toggle" href="#" role="button"
+                           data-bs-toggle="dropdown"
                            aria-expanded="false">
                             Language
                         </a>
@@ -66,14 +69,17 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="dropdown-item py-2" onclick="changeLanguage('es')" aria-label="Spanish">
+                                <a href="#" class="dropdown-item py-2" onclick="changeLanguage('es')"
+                                   aria-label="Spanish">
                                     <img src="images/spain-flag.png" alt="Spanish" title="Spanish" width="24">
                                     ES
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="dropdown-item py-2" onclick="changeLanguage('en')" aria-label="English">
-                                    <img src="images/united-states-of-america.png" alt="English" title="English" width="24">
+                                <a href="#" class="dropdown-item py-2" onclick="changeLanguage('en')"
+                                   aria-label="English">
+                                    <img src="images/united-states-of-america.png" alt="English" title="English"
+                                         width="24">
                                     EN
                                 </a>
                             </li>
@@ -94,7 +100,8 @@
             <div class="col-lg-8 col-sm-12 mt-lg-0 mt-4">
                 <span id="banner-greeting" class="title-small">Hello</span>
                 <h1 class="mb-2 title"><span id="banner-introduction">I'm</span> Gustavo </h1>
-                <h1 class="mb-4 title"> <strong id="banner-profession">a</strong> <span class="typed-text"></span><span class="cursor">&nbsp</span></h1>
+                <h1 class="mb-4 title"><strong id="banner-profession">a</strong> <span class="typed-text"></span><span
+                        class="cursor">&nbsp</span></h1>
             </div>
         </div>
     </div>
@@ -114,13 +121,22 @@
                 <div class="col-lg-8 mt-lg-0 mt-5">
                     <h5 id="about-title" class="title-small mb-2">Who am i?</h5>
                     <p id="about-text-p1" class="mt-lg-3 mt-2">
-                        Possuo graduação em Tecnologia em Sistemas para Internet, onde me aprofundei em Desenvolvimento Web, aprendendo tecnologias como HTML, CSS e Javascript para o Frontend e Node JS, Ruby on Rails e PHP Laravel para o Backend. Na parte de Segurança Web, obtive experiências com Defesa Cibernética, sendo este meu projeto de pesquisa de conclusão de curso.
+                        Possuo graduação em Tecnologia em Sistemas para Internet, onde me aprofundei em Desenvolvimento
+                        Web, aprendendo tecnologias como HTML, CSS e Javascript para o Frontend e Node JS, Ruby on Rails
+                        e PHP Laravel para o Backend. Na parte de Segurança Web, obtive experiências com Defesa
+                        Cibernética, sendo este meu projeto de pesquisa de conclusão de curso.
                     </p>
                     <p id="about-text-p2" class="mt-lg-3 mt-2">
-                        Com mais de cinco anos de experiência como Professor de Programação, evoluí minhas estratégias de ensino para transmitir conhecimento em Desenvolvimento Web e diversos Frameworks para uma base de alunos diversificada. Minha expertise também se estende à mentorias em Desenvolvimento de Jogos Digitais, Robótica e IoT.
+                        Com mais de cinco anos de experiência como Professor de Programação, evoluí minhas estratégias
+                        de ensino para transmitir conhecimento em Desenvolvimento Web e diversos Frameworks para uma
+                        base de alunos diversificada. Minha expertise também se estende à mentorias em Desenvolvimento
+                        de Jogos Digitais, Robótica e IoT.
                     </p>
                     <p id="about-text-p3" class="mt-lg-3 mt-2">
-                        Recentemente desenvolvi um Sistema de Recomendação utilizando Java Spring Boot para uma empresa de educação a distância. Adquiri habilidades analíticas que envolvem processos estatísticos através da aplicação de Métodos Matemáticos na Computação. Além disso, também trabalhei com performance de software e linguagem R.
+                        Recentemente desenvolvi um Sistema de Recomendação utilizando Java Spring Boot para uma empresa
+                        de educação a distância. Adquiri habilidades analíticas que envolvem processos estatísticos
+                        através da aplicação de Métodos Matemáticos na Computação. Além disso, também trabalhei com
+                        performance de software e linguagem R.
                     </p>
                     <a id="download-cv" href="#download" class="btn btn-style btn-primary mt-lg-5 mt-4">Download CV</a>
                 </div>
@@ -134,24 +150,32 @@
 <section id="education" class="py-5">
     <div class="container py-lg-5 py-3">
         <h5 id="education-title" class="title-small mb-2"> Education</h5>
-        <h3 id="education-university-1" class="mb-2">Universidade Tecnológica Federal do Paraná</h3>
-        <h4 id="education-title-1">Pós-graduação Lato Sensu - Especialização, Programação para Dispositivos Móveis</h4>
+        <h3 id="education-title-1">Pós-graduação Lato Sensu - Especialização, Programação para Dispositivos Móveis</h3>
+        <h4 id="education-university-1" class="mb-2">Universidade Tecnológica Federal do Paraná</h4>
+
         <span id="education-period-1" class="title-small">Maio de 2024 - Maio de 2026</span>
         <p id="education-description-1">
-            Especialização focada em desenvolvimento de aplicações para dispositivos móveis, abrangendo desde conceitos fundamentais até técnicas avançadas. O programa inclui disciplinas como desenvolvimento Android, design de interfaces, gestão de projetos móveis, integração com serviços web, DevOps, monetização e programação em plataformas como Flutter, React Native e iOS.
+            Especialização focada em desenvolvimento de aplicações para dispositivos móveis, abrangendo desde conceitos
+            fundamentais até técnicas avançadas. O programa inclui disciplinas como desenvolvimento Android, design de
+            interfaces, gestão de projetos móveis, integração com serviços web, DevOps, monetização e programação em
+            plataformas como Flutter, React Native e iOS.
         </p>
-        <h3 id="education-university-2" class="mt-4 mb-2">Universidade Estadual do Oeste do Paraná</h3>
-        <h4 id="education-title-2">Mestrado, Métodos de Computação Aplicada</h4>
+
+        <h3 id="education-title-2" class="mt-4">Mestrado, Métodos de Computação Aplicada</h3>
+        <h4 id="education-university-2" class="mb-2">Universidade Estadual do Oeste do Paraná</h4>
         <span id="education-period-2" class="title-small">Julho de 2021 - Fevereiro de 2024</span>
         <p id="education-description-2">
             Projeto de um sistema para recomendação de conteúdo em plataformas adaptativas de ensino a distância.
         </p>
-        <h3 id="education-university-3" class="mt-4 mb-2">Universidade Tecnológica Federal do Paraná</h3>
-        <h4 id="education-title-3">Graduação em Tecnologia da Informação - Sistemas para Internet</h4>
+
+        <h3 id="education-title-3" class="mt-4">Graduação em Tecnologia da Informação - Sistemas para Internet</h3>
+        <h4 id="education-university-3" class="mb-2">Universidade Tecnológica Federal do Paraná</h4>
         <span id="education-period-3" class="title-small">Março 2017 - 2020</span>
         <p id="education-description-3">
-            Focado na construção de soluções digitais completas e inovadoras para web e mobile, dominando todas as etapas do processo com alta qualidade, segurança e usabilidade.
-            Trabalho de Conclusão de Curso na disciplina de Segurança da Informação, com o título: Um estudo comparativo entre processos de desenvolvimento de software seguro.
+            Focado na construção de soluções digitais completas e inovadoras para web e mobile, dominando todas as
+            etapas do processo com alta qualidade, segurança e usabilidade.
+            Trabalho de Conclusão de Curso na disciplina de Segurança da Informação, com o título: Um estudo comparativo
+            entre processos de desenvolvimento de software seguro.
         </p>
     </div>
 </section>
@@ -180,104 +204,172 @@
             <h3 id="portfolio-subtitle" class="title-big text-center mb-sm-5 mb-4">O que eu já fiz</h3>
             <div class="row">
                 <div class="col-md-12 mx-auto pr-2">
-                    <div class="owl-two owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="card">
-                                <div class="box-wrap">
-                                    <div class="icon">
-                                        <span class="fa fa-pencil-square-o"></span>
+
+                    <div class="swiper-container">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="fa fa-pencil-square-o"></span>
+                                        </div>
+                                        <h4 class="number">01</h4>
+                                        <h4><a id="project-1-title" href="#url"></a></h4>
+                                        <p id="project-1-text">
+                                        </p>
+                                        <a id="project-1-button" href="#" class="read" data-bs-toggle="modal"
+                                           data-bs-target="#imageModal"
+                                           data-image="images/portfolio/dashboard.png"></a>
                                     </div>
-                                    <h4 class="number">01</h4>
-                                    <h4><a id="project-1-title" href="#url"></a></h4>
-                                    <p id="project-1-text">
-                                    </p>
-                                    <a id="project-1-button" href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/dashboard.png"></a>
                                 </div>
                             </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="fa fa-laptop"></span>
+                                        </div>
+                                        <h4 class="number">02</h4>
+                                        <h4><a id="project-2-title" href="#url"></a></h4>
+                                        <p id="project-2-text">
+                                        </p>
+                                        <a id="project-2-button" href="#" class="read" data-bs-toggle="modal"
+                                           data-bs-target="#imageModal" data-image="images/portfolio/relatorio.png">Ver
+                                            Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="fa fa-area-chart"></span>
+                                        </div>
+                                        <h4 class="number">03</h4>
+                                        <h4><a id="project-3-title" href="#url"></a></h4>
+                                        <p id="project-3-text">
+                                        </p>
+                                        <a id="project-3-button" href="#" class="read" data-bs-toggle="modal"
+                                           data-bs-target="#imageModal"
+                                           data-image="images/portfolio/genesis-pass.png">Ver Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="fa fa-pencil-square-o"></span>
+                                        </div>
+                                        <h4 class="number">04</h4>
+                                        <h4><a id="project-4-title" href="#url"></a></h4>
+                                        <p id="project-4-text">
+                                        </p>
+                                        <a id="project-4-button" href="#" class="read" data-bs-toggle="modal"
+                                           data-bs-target="#imageModal"
+                                           data-image="images/portfolio/gamo-store.png">Ver Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="fa fa-laptop"></span>
+                                        </div>
+                                        <h4 class="number">05</h4>
+                                        <h4><a id="project-5-title" href="#url"></a></h4>
+                                        <p id="project-5-text">
+                                        </p>
+                                        <a id="project-5-button" href="#" class="read" data-bs-toggle="modal"
+                                           data-bs-target="#imageModal"
+                                           data-image="images/portfolio/gamo-app.png">Ver Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="fa fa-area-chart"></span>
+                                        </div>
+                                        <h4 class="number">06</h4>
+                                        <h4><a id="project-6-title" href="#url"></a></h4>
+                                        <p id="project-6-text">
+                                        </p>
+                                        <a id="project-6-button" href="#" class="read" data-bs-toggle="modal"
+                                           data-bs-target="#imageModal"
+                                           data-image="images/portfolio/gym-app.png">Ver Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="fa fa-area-chart"></span>
+                                        </div>
+                                        <h4 class="number">07</h4>
+                                        <h4><a id="project-7-title" href="#url"></a></h4>
+                                        <p id="project-7-text">
+                                        </p>
+                                        <a id="project-7-button" href="#" class="read" data-bs-toggle="modal"
+                                           data-bs-target="#imageModal"
+                                           data-image="images/portfolio/gym-app.png">Ver Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="fa fa-area-chart"></span>
+                                        </div>
+                                        <h4 class="number">08</h4>
+                                        <h4><a id="project-8-title" href="#url"></a></h4>
+                                        <p id="project-8-text">
+                                        </p>
+                                        <a id="project-8-button" href="#" class="read" data-bs-toggle="modal"
+                                           data-bs-target="#imageModal"
+                                           data-image="images/portfolio/gym-app.png">Ver Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="fa fa-area-chart"></span>
+                                        </div>
+                                        <h4 class="number">09</h4>
+                                        <h4><a id="project-9-title" href="#url"></a></h4>
+                                        <p id="project-9-text">
+                                        </p>
+                                        <a id="project-9-button" href="#" class="read" data-bs-toggle="modal"
+                                           data-bs-target="#imageModal"
+                                           data-image="images/portfolio/gym-app.png">Ver Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
-                        <div class="item">
-                            <div class="card">
-                                <div class="box-wrap">
-                                    <div class="icon">
-                                        <span class="fa fa-laptop"></span>
-                                    </div>
-                                    <h4 class="number">02</h4>
-                                    <h4><a id="project-2-title" href="#url">Relatório de Recomendação</a></h4>
-                                    <p id="project-2-text">
-                                        O frontend do sistema foi construído utilizando as tecnologias HTML, CSS e JavaScript, com o framework Bootstrap 5 para criar uma interface responsiva e moderna. A biblioteca ApexCharts foi empregada para gerar gráficos interativos, enquanto as bibliotecas jsPDF e html2canvas possibilitam a conversão do template HTML em um documento PDF.
-                                    </p>
-                                    <a id="project-2-button" href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/relatorio.png">Ver Projeto</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="card">
-                                <div class="box-wrap">
-                                    <div class="icon">
-                                        <span class="fa fa-area-chart"></span>
-                                    </div>
-                                    <h4 class="number">03</h4>
-                                    <h4><a id="project-3-title" href="#url">Reopen Genesis Pass</a></h4>
-                                    <p id="project-3-text">
-                                        Utilizando Bootstrap 5, CSS3, HTML5, JavaScript e jQuery, fui responsável por construir a interface frontend deste site. Através de um design responsivo e intuitivo, consegui criar uma experiência de usuário agradável que reflete a identidade visual da marca.
-                                    </p>
-                                    <a id="project-3-button" href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/genesis-pass.png">Ver Projeto</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="card">
-                                <div class="box-wrap">
-                                    <div class="icon">
-                                        <span class="fa fa-pencil-square-o"></span>
-                                    </div>
-                                    <h4 class="number">04</h4>
-                                    <h4><a id="project-4-title" href="#url">Gamo Rei Store</a></h4>
-                                    <p id="project-4-text">
-                                        O sistema da loja virtual foi desenvolvido com Node.js e React.js. No backend, Node.js proporcionou uma arquitetura escalável e eficiente, especialmente com o uso do Express para a criação de rotas e do MongoDB como banco de dados. No frontend, React.js foi essencial para criar uma interface de usuário dinâmica e responsiva, utilizando o JSX para uma integração fluida entre HTML e JavaScript, além de componentes reutilizáveis.
-                                    </p>
-                                    <a id="project-4-button" href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/gamo-store.png">Ver Projeto</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="card">
-                                <div class="box-wrap">
-                                    <div class="icon">
-                                        <span class="fa fa-laptop"></span>
-                                    </div>
-                                    <h4 class="number">05</h4>
-                                    <h4><a href="#url">Gamo Rei App</a></h4>
-                                    <p>
-                                        Aplicativo Android desenvolvido para uma loja virtual utilizando Kotlin. Utilizei o Android Jetpack para simplificar o desenvolvimento, com destaque para o uso do Room para o gerenciamento de banco de dados local e do ViewModel para a gestão eficiente do ciclo de vida das atividades. Além disso, implementei a arquitetura MVVM (Model-View-ViewModel) para separar as responsabilidades de forma clara, buscando um código mais organizado e fácil de manter.
-                                    </p>
-                                    <a href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/gamo-app.png">Ver Projeto</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="card">
-                                <div class="box-wrap">
-                                    <div class="icon">
-                                        <span class="fa fa-area-chart"></span>
-                                    </div>
-                                    <h4 class="number">06</h4>
-                                    <h4><a href="#url">Gym App</a></h4>
-                                    <p>
-                                        Aplicativo Android desenvolvido para uma academia utilizando Kotlin, focando em funcionalidades que otimizam a gestão e o engajamento dos usuários. Integrei o Firebase para gerenciar o banco de dados em nuvem. Além disso, utilizei o Firebase Authentication para um sistema de login seguro e eficiente, e o Firebase Cloud Messaging para o envio de notificações personalizadas.
-                                    </p>
-                                    <a href="#" class="read" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="images/portfolio/gym-app.png">Ver Projeto Projeto</a>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Paginação -->
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
@@ -369,7 +461,9 @@
     <div class="container py-3">
         <h6 id="contact-title" class="title-small">Get in touch</h6>
         <h3 id="contact-subtitle" class="title-big mb-md-5 mb-4">Let's start a Project! Hire Me.</h3>
-        <a id="contact-button" href="mailto:gustavomalacarne.r@gmail.com?subject=Contato%20profissional%20a%20partir%20do%20seu%20portfólio" class="btn btn-style btn-primary mr-2">Hire Me </a>
+        <a id="contact-button"
+           href="mailto:gustavomalacarne.r@gmail.com?subject=Contato%20profissional%20a%20partir%20do%20seu%20portfólio"
+           class="btn btn-style btn-primary mr-2">Hire Me </a>
     </div>
 </section>
 <!-- //contact -->
@@ -380,11 +474,14 @@
         <div class="footer-content">
             <div class="row">
                 <div class="col-lg-8 footer-left">
-                    <p class="m-0"> <span id="footer-text">Design by</span> <a class="text-link" href="https://github.com/gustavo-rm">Gustavo Malacarne</a></p>
+                    <p class="m-0"><span id="footer-text">Design by</span> <a class="text-link"
+                                                                              href="https://github.com/gustavo-rm">Gustavo
+                        Malacarne</a></p>
                 </div>
-                <div class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3">
+                <div class="col-lg-4 footer-right text-lg-right text-end mt-lg-0 mt-3">
                     <ul class="social m-0 p-0">
-                        <li><a href="https://www.linkedin.com/in/gustavo-malacarne/"><span class="fa fa-linkedin-square"></span></a></li>
+                        <li><a href="https://www.linkedin.com/in/gustavo-malacarne/"><span
+                                class="fa fa-linkedin-square"></span></a></li>
                         <li><a href="https://github.com/gustavo-rm"><span class="fa fa-github"></span></a></li>
                     </ul>
                 </div>
@@ -401,12 +498,11 @@
 <!-- //Footer -->
 
 <!-- all js scripts and files here -->
-<script src="js/jquery-3.3.1.min.js"></script> <!-- default jQuery -->
 <script src="js/bootstrap/bootstrap.js"></script> <!-- bootstrap 5 -->
 <script src="js/script.js"></script>
 <script src="js/language.js"></script>
 <script src="js/canvas_animation.js"></script>
-<script src="js/owl.carousel.js"></script> <!-- owl carousel -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </body>
 </html>
