@@ -47,56 +47,47 @@
     "project-1": {
       "title": "RAG System",
       "text": "Retrieval-Augmented Generation (RAG) system developed in Python. The pipeline processes and splits (chunks) documents, generates embeddings using Hugging Face models, and stores them in ChromaDB. When a user asks a question, the system retrieves the relevant context from ChromaDB and injects it into a prompt for an LLM (such as Llama 2), which then generates an accurate, fact-based response.",
-      "button": "View Project",
-      "image": "images/portfolio/"
+      "button": "View Project"
     },
     "project-2": {
       "title": "Dynamic Study Planner",
       "text": "Stateless RESTful API built with Spring Boot, using a Genetic Algorithm to determine the strategic allocation of effort among subjects, with its fitness function calibrated by principles of Meaningful Learning. A tactical scheduling engine applies heuristics based on the Forgetting Curve theory (for spaced repetition) and Cognitive Load theory (for balancing daily study intensity).",
-      "button": "View Project",
-      "image": "images/portfolio/study-plan.png"
+      "button": "View Project"
     },
     "project-3": {
       "title": "Student Cognitive Load Predictor",
       "text": "Uses Python to estimate the student's cognitive load by combining course data and well-being information. With Pandas for data processing, the system applies Scikit-learn models (such as Linear and Logistic Regression) to objectively analyze and weight course difficulty factors and student stress indicators (Distress vs. Eustress). The result is a unified cognitive load score normalized using MinMaxScaler.",
-      "button": "View Project",
-      "image": "images/portfolio/"
+      "button": "View Project"
     },
     "project-4": {
       "title": "Recommendation API",
       "text": "Developed in Java using the Spring Boot framework to facilitate the creation of RESTful services. The MySQL database stores the information, with JPA managing the database interaction. To perform statistical calculations and data analysis, the Apache Commons Math, jfreechart, RCaller, and Apache Mahout libraries were used.",
-      "button": "View Project",
-      "image": "images/portfolio/dashboard.png"
+      "button": "View Project"
     },
     "project-5": {
       "title": "Recommendation Report",
       "text": "The system's frontend was built using HTML, CSS, and JavaScript, with the Bootstrap 5 framework to create a responsive and modern interface. The ApexCharts library was used to generate interactive charts, while the jsPDF and html2canvas libraries enable converting the HTML template into a PDF document.",
-      "button": "View Project",
-      "image": "images/portfolio/relatorio.png"
+      "button": "View Project"
     },
     "project-6": {
       "title": "Reopen Genesis Pass",
       "text": "Using Bootstrap 5, CSS3, HTML5, JavaScript, and jQuery, I was responsible for building the frontend interface of this website. Through a responsive and intuitive design, I created a pleasant user experience that reflects the brand’s visual identity.",
-      "button": "View Project",
-      "image": "images/portfolio/genesis-pass.png"
+      "button": "View Project"
     },
     "project-7": {
       "title": "Gamo Rei Store",
       "text": "On the backend, Node.js provided a scalable and efficient architecture, especially with Express for route creation and MongoDB as the database. On the frontend, React.js was essential for building a dynamic and responsive user interface, using JSX for smooth integration between HTML and JavaScript, along with reusable components.",
-      "button": "View Project",
-      "image": "images/portfolio/gamo-store.png"
+      "button": "View Project"
     },
     "project-8": {
       "title": "Gamo Rei App",
       "text": "Android application developed for an online store using Kotlin. It uses Room for local database management and ViewModel for efficient lifecycle management of activities. In addition, I implemented the MVVM (Model-View-ViewModel) architecture to clearly separate responsibilities, making the code organized and easy to maintain.",
-      "button": "View Project",
-      "image": "images/portfolio/gamo-app.png"
+      "button": "View Project"
     },
     "project-9": {
       "title": "Gym App",
       "text": "Android application developed for a gym using Kotlin, focusing on features that optimize management and user engagement. I integrated Firebase to manage the cloud database. Additionally, I used Firebase Authentication for a secure and efficient login system and Firebase Cloud Messaging for sending personalized notifications.",
-      "button": "View Project",
-      "image": "images/portfolio/gym-app.png"
+      "button": "View Project"
     }
   },
   "languages": {
